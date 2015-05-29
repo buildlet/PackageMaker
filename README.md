@@ -5,7 +5,6 @@ PackageMaker Toolkit  Version **1.0.7.0**
 
 概要
 ----
-
 ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを
 作成するための PowerShell コマンド群です。以下の2つの PowerShell モジュールと
 ソフトウェアパッケージ作成のためのサンプルが含まれます。
@@ -16,13 +15,11 @@ PackageMaker Toolkit  Version **1.0.7.0**
 
 インストール方法
 ----------------
-
 PackageMakerSetup.exe を実行してください。  
 
 
 アンインストール方法
 --------------------
-
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
@@ -32,7 +29,6 @@ PackageMakerSetup.exe を実行してください。
 
 動作環境
 --------
-
 BUILDLet.PowerShell.Utilities を実行するためには、下記のソフトウェアがインストール
 されている必要があります。
 
@@ -54,7 +50,6 @@ Windows 7 Ultimate x64 で動作を確認しています。
 
 使用準備
 --------
-
 下記の PowerShell コマンドを実行してモジュールをインポートしてください。
 
     Import-Module BUILDLet.PowerShell.PackageMaker
@@ -77,7 +72,6 @@ BUILDLet.PowerShell.PackageMaker をインポートするためには、BUILDLet
 
 使用方法
 --------
-
 BUILDLet PackageMaker Toolkit には、下記の PowerShell コマンド (Function および Cmdlet) 、
 変数、および、サンプルスクリプトを含むソフトウェアパッケージのサンプルが含まれます。
 
@@ -195,10 +189,14 @@ BUILDLet.PowerShell.PackageMaker をインポートすると、以下の変数�
 
 サンプルについて
 ----------------
-
 PowerShell サンプルスクリプトを含むソフトウェアパッケージ作成のサンプルは、既定の設定では
 32ビットOSの場合は %ProgramFiles%\BUILDLet PackageMaker Toolkit、
 64ビットOSの場合は %ProgramFiles(x86)%\BUILDLet PackageMaker Toolkit にインストールされています。
+
+
+ソースコード
+------------
+ソースコードは [buildlet/Utilities](https://github.com/buildlet/Utilities "buildlet/Utilities") からダウンロードしてください。
 
 
 ライセンス
