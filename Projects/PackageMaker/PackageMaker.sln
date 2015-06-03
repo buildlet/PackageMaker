@@ -1,0 +1,157 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{027248A7-BA3C-4E13-A293-B7365A7DB6D2}"
+	ProjectSection(SolutionItems) = preProject
+		Version\InstallerInfo.wxi = Version\InstallerInfo.wxi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Link", "Link", "{6E889817-C38C-47C6-B0D9-54BF15A05F1D}"
+	ProjectSection(SolutionItems) = preProject
+		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1
+		BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1 = BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetupBootstrapper", "BUILDLet.PackageMakerSetupBootstrapper\BUILDLet.PackageMakerSetupBootstrapper.wixproj", "{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B} = {E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280} = {929AF0F9-BB11-4CC5-B6D7-33DF9911D280}
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetup", "BUILDLet.PackageMakerSetup\BUILDLet.PackageMakerSetup.wixproj", "{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BEB61A64-5B1C-4577-8733-8A7E55808004}"
+	ProjectSection(SolutionItems) = preProject
+		..\Common\InstallerGUID.wxi = ..\Common\InstallerGUID.wxi
+		..\Common\Manufacturer.wxi = ..\Common\Manufacturer.wxi
+		..\Common\ResourceFiles.wxi = ..\Common\ResourceFiles.wxi
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup", "BUILDLet.PowerShell.PackageMakerSetup\BUILDLet.PowerShell.PackageMakerSetup.wixproj", "{B52F164C-10FC-4907-9BEF-5D25D5A8888A}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup64", "BUILDLet.PowerShell.PackageMakerSetup64\BUILDLet.PowerShell.PackageMakerSetup64.wixproj", "{61C69C76-4117-4576-BBAF-946CB84E4EBD}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetupBootstrapper", "BUILDLet.PowerShell.PackageMakerSetupBootstrapper\BUILDLet.PowerShell.PackageMakerSetupBootstrapper.wixproj", "{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A} = {B52F164C-10FC-4907-9BEF-5D25D5A8888A}
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD} = {61C69C76-4117-4576-BBAF-946CB84E4EBD}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PowerShell.PackageMaker", "BUILDLet.PowerShell.PackageMaker", "{F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}"
+	ProjectSection(SolutionItems) = preProject
+		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1
+		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psm1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psm1
+		BUILDLet.PowerShell.PackageMaker\Release.ps1 = BUILDLet.PowerShell.PackageMaker\Release.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleData", "SampleData", "{43661676-1424-40BB-AD81-8D8AC6FBABF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SamplePackage", "SamplePackage", "{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB}"
+	ProjectSection(SolutionItems) = preProject
+		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\build.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\build.ps1
+		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\check.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\check.ps1
+		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\init.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\init.ps1
+		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\ReleaseNotes.html = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\ReleaseNotes.html
+		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\sample.ini = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\sample.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PowerShell.PackageMakerTest", "BUILDLet.PowerShell.PackageMakerTest", "{B36DF3E2-C202-4E64-A0E9-27E3FE8558C1}"
+	ProjectSection(SolutionItems) = preProject
+		BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1 = BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|Win32.ActiveCfg = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|Win32.Build.0 = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|x86.ActiveCfg = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Debug|x86.Build.0 = Debug|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|Any CPU.ActiveCfg = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|Mixed Platforms.Build.0 = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|Win32.ActiveCfg = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|Win32.Build.0 = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|x86.ActiveCfg = Release|x86
+		{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}.Release|x86.Build.0 = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|Win32.ActiveCfg = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|Win32.Build.0 = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|x86.ActiveCfg = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Debug|x86.Build.0 = Debug|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|Any CPU.ActiveCfg = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|Win32.ActiveCfg = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|Win32.Build.0 = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|x86.ActiveCfg = Release|x86
+		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}.Release|x86.Build.0 = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|Win32.ActiveCfg = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|Win32.Build.0 = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|x86.ActiveCfg = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Debug|x86.Build.0 = Debug|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|Any CPU.ActiveCfg = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|Win32.ActiveCfg = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|Win32.Build.0 = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|x86.ActiveCfg = Release|x86
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A}.Release|x86.Build.0 = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|Win32.ActiveCfg = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|Win32.Build.0 = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|x86.ActiveCfg = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Debug|x86.Build.0 = Debug|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|Any CPU.ActiveCfg = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|Mixed Platforms.Build.0 = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|Win32.ActiveCfg = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|Win32.Build.0 = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|x86.ActiveCfg = Release|x86
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD}.Release|x86.Build.0 = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|Win32.ActiveCfg = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|Win32.Build.0 = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|x86.ActiveCfg = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Debug|x86.Build.0 = Debug|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|Any CPU.ActiveCfg = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|Mixed Platforms.Build.0 = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|Win32.ActiveCfg = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|Win32.Build.0 = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|x86.ActiveCfg = Release|x86
+		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E889817-C38C-47C6-B0D9-54BF15A05F1D} = {027248A7-BA3C-4E13-A293-B7365A7DB6D2}
+		{BEB61A64-5B1C-4577-8733-8A7E55808004} = {6E889817-C38C-47C6-B0D9-54BF15A05F1D}
+		{43661676-1424-40BB-AD81-8D8AC6FBABF0} = {F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}
+		{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB} = {43661676-1424-40BB-AD81-8D8AC6FBABF0}
+	EndGlobalSection
+EndGlobal
