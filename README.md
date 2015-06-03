@@ -1,7 +1,7 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  Version **1.0.7.0**
+PackageMaker Toolkit  Version **1.1.0.0**
 
 概要
 ----
@@ -193,10 +193,10 @@ PowerShell サンプルスクリプトを含むソフトウェアパッケージ
 32ビットOSの場合は %ProgramFiles%\BUILDLet PackageMaker Toolkit、
 64ビットOSの場合は %ProgramFiles(x86)%\BUILDLet PackageMaker Toolkit にインストールされています。
 
+SamplePackage.zip を任意のフォルダに解凍し、展開されたフォルダーで下記のコマンドを実行すると、
+ソフトウェアパッケージのサンプル、および、そのISOイメージ ファイルが (再) 作成されます。
 
-ソースコード
-------------
-ソースコードは [buildlet/Utilities](https://github.com/buildlet/Utilities "buildlet/Utilities") からダウンロードしてください。
+    .\init.ps1; .\build.ps1; .\check.ps1
 
 
 ライセンス
@@ -207,6 +207,10 @@ PowerShell サンプルスクリプトを含むソフトウェアパッケージ
 
 変更履歴
 --------
+### Version 1.1.0.0
+**2015/06/03**  
+マイナーアップデート
+
 ### Version 1.0.7.0
 **2015/05/29**  
 初版
