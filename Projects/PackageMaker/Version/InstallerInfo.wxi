@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <!-- Version Information -->
+  <?define Version="1.1.0"?>
+
+
+  
+  <!-- Product Information (BUILDLet.PowerShell.PackageMaker) -->
+  <?define PSPackageMaker_ProductName="BUILDLet PowerShell PackageMaker Module"?>
+  <?define PSPackageMaker_ProductComment="BUILDLet PowerShell PackageMaker Module"?>
+  <?define PSPackageMaker_PSModuleName="BUILDLet.PowerShell.PackageMaker"?>
+  
+  <!-- Product Information (BUILDLet PackageMaker Toolkit) -->
+  <?define PackageMaker_ProductName="BUILDLet PackageMaker Toolkit"?>
+  <?define PackageMaker_ProductComment="BUILDLet PackageMaker Toolkit"?>
+  <?define PackageMaker_ProductFolderName="BUILDLet PackageMaker Toolkit"?>
+  
+  
+
+  <!-- Product Component (BUILDLet.PowerShell.PackageMaker) -->
+  <?define ProductComponent_PSPackageMaker_PSD1="..\..\..\Release\PackageMaker\BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1"?>
+  <?define ProductComponent_PSPackageMaker_PSM1="..\..\..\Release\PackageMaker\BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psm1"?>
+  <?define ProductComponent_PSPackageMakerSetup="..\..\..\Release\PackageMaker\PSPackageMakerSetup.msi"?>
+  <?define ProductComponent_PSPackageMakerSetup64="..\..\..\Release\PackageMaker\PSPackageMakerSetup64.msi"?>
+
+  <!-- Product Component (BUILDLet PackageMaker Toolkit) -->
+  <?define ProductComponent_PSUtilitySetupBootstrapper="..\..\..\Release\Utilities\PSUtilitySetup.exe"?>
+
+  <?define ProductComponent_PSPackageMakerSetupBootstrapper="..\..\..\Release\PackageMaker\PSPackageMakerSetup.exe"?>
+  <?define ProductComponent_PackageMakerSetup="..\..\..\Release\PackageMaker\PackageMakerSetup.msi"?>
+  <?define ProductComponent_PackageMaker_SampleDataFile="..\..\..\Release\PackageMaker\SamplePackage.zip"?>
+
+</Include>
