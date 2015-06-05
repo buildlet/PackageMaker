@@ -205,6 +205,14 @@ SamplePackage.zip を任意のフォルダに解凍し、展開されたフォ�
 [LICENCE](/LICENSE "LICENSE") を参照してください。
 
 
+ソースコード
+------------
+プロジェクトをビルドするためには Wix Toolset (Windows Installer XML toolset) が必要です。
+また、PowerShell モジュール (BUILDLet.PowerShell.PackageMaker) の単体テストで [Pester](https://github.com/EWSoftware/SHFB "Pester") を使用しています。
+
+BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](https://github.com/buildlet/Utilities "buildlet/Utilities") からダウンロードしてください。
+
+
 変更履歴
 --------
 ### Version 1.1.0.0
