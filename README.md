@@ -221,4 +221,4 @@ BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](http
 
 ### Version 1.0.7.0
 **2015/05/29**  
-初版
+1st リリース
