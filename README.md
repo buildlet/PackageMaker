@@ -1,7 +1,7 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  Version **1.1.0.0**
+PackageMaker Toolkit  Version **1.1.1.0**
 
 概要
 ----
@@ -215,6 +215,10 @@ BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](http
 
 変更履歴
 --------
+### Version 1.1.1.0
+**2015/06/08**  
+BUILDLet.PowerShell.Utilities モジュールのバージョン誤りを修正・改善。
+
 ### Version 1.1.0.0
 **2015/06/03**  
 マイナーアップデート
