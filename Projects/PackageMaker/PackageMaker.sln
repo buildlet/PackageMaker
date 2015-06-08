@@ -22,13 +22,6 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetupB
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetup", "BUILDLet.PackageMakerSetup\BUILDLet.PackageMakerSetup.wixproj", "{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BEB61A64-5B1C-4577-8733-8A7E55808004}"
-	ProjectSection(SolutionItems) = preProject
-		..\Common\InstallerGUID.wxi = ..\Common\InstallerGUID.wxi
-		..\Common\Manufacturer.wxi = ..\Common\Manufacturer.wxi
-		..\Common\ResourceFiles.wxi = ..\Common\ResourceFiles.wxi
-	EndProjectSection
-EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup", "BUILDLet.PowerShell.PackageMakerSetup\BUILDLet.PowerShell.PackageMakerSetup.wixproj", "{B52F164C-10FC-4907-9BEF-5D25D5A8888A}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup64", "BUILDLet.PowerShell.PackageMakerSetup64\BUILDLet.PowerShell.PackageMakerSetup64.wixproj", "{61C69C76-4117-4576-BBAF-946CB84E4EBD}"
@@ -62,7 +55,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PowerShell.Package
 		BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1 = BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DDF9300B-7BBE-415B-8629-7F3F1826B2D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Link", "Link", "{9EE28D62-01E3-42F0-8DFE-3FC75BD578E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\Common\InstallerGUID.wxi = ..\Common\InstallerGUID.wxi
+		..\Common\Manufacturer.wxi = ..\Common\Manufacturer.wxi
+		..\Common\ResourceFiles.wxi = ..\Common\ResourceFiles.wxi
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dsakam.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = BUILDLet.PowerShell.PackageMakerSetup\\BUILDLet.PowerShell.PackageMakerSetup.wixproj
+		SccProjectName0 = BUILDLet.PowerShell.PackageMakerSetup
+		SccAuxPath0 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath0 = BUILDLet.PowerShell.PackageMakerSetup
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = BUILDLet.PowerShell.PackageMakerSetup64\\BUILDLet.PowerShell.PackageMakerSetup64.wixproj
+		SccProjectName1 = BUILDLet.PowerShell.PackageMakerSetup64
+		SccAuxPath1 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath1 = BUILDLet.PowerShell.PackageMakerSetup64
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = BUILDLet.PowerShell.PackageMakerSetupBootstrapper\\BUILDLet.PowerShell.PackageMakerSetupBootstrapper.wixproj
+		SccProjectName2 = BUILDLet.PowerShell.PackageMakerSetupBootstrapper
+		SccAuxPath2 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath2 = BUILDLet.PowerShell.PackageMakerSetupBootstrapper
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -150,8 +172,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6E889817-C38C-47C6-B0D9-54BF15A05F1D} = {027248A7-BA3C-4E13-A293-B7365A7DB6D2}
-		{BEB61A64-5B1C-4577-8733-8A7E55808004} = {6E889817-C38C-47C6-B0D9-54BF15A05F1D}
 		{43661676-1424-40BB-AD81-8D8AC6FBABF0} = {F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}
 		{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB} = {43661676-1424-40BB-AD81-8D8AC6FBABF0}
+		{9EE28D62-01E3-42F0-8DFE-3FC75BD578E9} = {DDF9300B-7BBE-415B-8629-7F3F1826B2D9}
 	EndGlobalSection
 EndGlobal

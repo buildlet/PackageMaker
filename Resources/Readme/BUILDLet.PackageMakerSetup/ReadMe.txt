@@ -1,4 +1,4 @@
-﻿BUILDLet PackageMaker Toolkit  Version 1.1.0.0
+﻿BUILDLet PackageMaker Toolkit  Version 1.1.1.0
 ==============================================
 
 概要
@@ -217,6 +217,9 @@ LICENCE.txt を参照してください。
 
 変更履歴
 --------
+* 2015/06/05    Version 1.1.1.0
+  BUILDLet.PowerShell.Utilities モジュールのバージョン誤りを修正・改善。
+
 * 2015/06/02    Version 1.1.0.0    マイナーアップデート (Readme ファイルを更新)
 * 2015/05/29    Version 1.0.8.0    Readme ファイルを更新
 * 2015/05/27    Version 1.0.7.0    初版
