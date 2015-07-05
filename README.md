@@ -209,7 +209,8 @@ SamplePackage.zip を任意のフォルダに解凍し、展開されたフォ�
 --------
 ### Version 1.1.2.0
 **2015/07/05**  
-マイナーアップデート
+"BUILDLet.PowerShell.Utilities" を "BUILDLet.Utilities.PowerShell" に変更。  
+"BUILDLet.PowerShell.PackageMaker" を "BUILDLet.PackageMaker.PowerShell" に変更。  
 
 ### Version 1.1.0.0
 **2015/06/03**  
