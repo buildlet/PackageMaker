@@ -1,7 +1,7 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  Version **1.1.0.0**
+PackageMaker Toolkit  Version **1.1.2.0**
 
 概要
 ----
@@ -9,8 +9,8 @@ PackageMaker Toolkit  Version **1.1.0.0**
 作成するための PowerShell コマンド群です。以下の2つの PowerShell モジュールと
 ソフトウェアパッケージ作成のためのサンプルが含まれます。
 
-  1. BUILDLet PowerShell Utility Module      (BUILDLet.PowerShell.Utilities)
-  2. BUILDLet PowerShell PackageMaker Module (BUILDLet.PowerShell.PackageMaker)
+  1. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
+  2. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
 
 
 インストール方法
@@ -23,20 +23,20 @@ PackageMakerSetup.exe を実行してください。
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet PowerShell Utility Module      (BUILDLet.PowerShell.Utilities)
-  3. BUILDLet PowerShell PackageMaker Module (BUILDLet.PowerShell.PackageMaker)
+  2. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
+  3. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
 
 
 動作環境
 --------
-BUILDLet.PowerShell.Utilities を実行するためには、下記のソフトウェアがインストール
+BUILDLet.Utilities.PowerShell を実行するためには、下記のソフトウェアがインストール
 されている必要があります。
 
   1. Windows Management Framework 4.0 (Windows PowerShell 4.0)
   2. Microsoft .NET Framework 4.5
 
 
-BUILDLet.PowerShell.PackageMaker の全ての機能を使用するためには、
+BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには、
 実行環境に下記のソフトウェアがインストールされている必要があります。
 ( [] で記載してあるプログラムが必要です。 )
 
@@ -59,15 +59,15 @@ PowerShell モジュールは、32ビットOSの場合は %ProgramFiles%\Windows
 %ProgramFiles(x86)%\WindowsPowerShell\Modules にインストールされます。
 これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけで
 モジュールがインポートできす。インポートできないときは下記のコマンドを実行して 
-BUILDLet.PowerShell.Utilities および BUILDLet.PowerShell.PackageMaker が表示される
+BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell が表示される
 ことを確認してください。
 
     Get-Module -ListAvailable
 
 
-BUILDLet.PowerShell.PackageMaker をインポートするためには、BUILDLet.PowerShell.Utilities 
-が事前にインポートされている必要があるため、BUILDLet.PowerShell.PackageMaker を
-インポートすると BUILDLet.PowerShell.Utilities も自動的にインポートされます。
+BUILDLet.PackageMaker.PowerShell をインポートするためには、BUILDLet.Utilities.PowerShell 
+が事前にインポートされている必要があるため、BUILDLet.PackageMaker.PowerShell を
+インポートすると BUILDLet.Utilities.PowerShell も自動的にインポートされます。
 
 
 使用方法
@@ -78,7 +78,7 @@ BUILDLet PackageMaker Toolkit には、下記の PowerShell コマンド (Functi
 
 ### コマンド (Function または Cmdlet)
 
-BUILDLet.PowerShell.Utilities をインポートすると、
+BUILDLet.Utilities.PowerShell をインポートすると、
 以下のコマンド (Function または Cmdlet) がインポートされます。
 詳細は各コマンドのヘルプを参照してください。
 ( Cmdlet は、コマンドのみを入力するとコマンドの概要が表示されます。 )
@@ -138,7 +138,7 @@ BUILDLet.PowerShell.Utilities をインポートすると、
   指定されたパスにディレクトリを作成します。
 
 
-BUILDLet.PowerShell.PackageMaker をインポートすると、以下のコマンド (Function) がインポートされます。
+BUILDLet.PackageMaker.PowerShell をインポートすると、以下のコマンド (Function) がインポートされます。
 詳細は各コマンドのヘルプを参照してください。
 
 #### Get-AuthenticodeTimeStamp (Function)
@@ -156,14 +156,14 @@ BUILDLet.PowerShell.PackageMaker をインポートすると、以下のコマ�
 
 ### 変数
 
-BUILDLet.PowerShell.Utilities をインポートすると、以下の変数がインポートされます。
+BUILDLet.Utilities.PowerShell をインポートすると、以下の変数がインポートされます。
 
 #### $VerbosePromptLength 
   詳細メッセージの各行の接頭文字列長  
   ( 日本語環境であれば、"詳細: " なので 6 です。 )
 
 
-BUILDLet.PowerShell.PackageMaker をインポートすると、以下の変数がインポートされます。
+BUILDLet.PackageMaker.PowerShell をインポートすると、以下の変数がインポートされます。
 
 #### $GenIsoImageOptions
   デフォルトで用意されている genisoimage.exe のオプションパラメーターを格納した文字列配列
@@ -207,6 +207,10 @@ SamplePackage.zip を任意のフォルダに解凍し、展開されたフォ�
 
 変更履歴
 --------
+### Version 1.1.2.0
+**2015/07/05**  
+マイナーアップデート
+
 ### Version 1.1.0.0
 **2015/06/03**  
 マイナーアップデート
