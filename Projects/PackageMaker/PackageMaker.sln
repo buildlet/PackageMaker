@@ -10,8 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{0272
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Link", "Link", "{6E889817-C38C-47C6-B0D9-54BF15A05F1D}"
 	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1
-		BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1 = BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1
+		BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1 = BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1
+		BUILDLet.PackageMaker.PowerShellTest\BUILDLet.PackageMaker.PowerShell.Tests.ps1 = BUILDLet.PackageMaker.PowerShellTest\BUILDLet.PackageMaker.PowerShell.Tests.ps1
 	EndProjectSection
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetupBootstrapper", "BUILDLet.PackageMakerSetupBootstrapper\BUILDLet.PackageMakerSetupBootstrapper.wixproj", "{44189944-ED1F-4AD1-A2C2-A2A6ED869E15}"
@@ -22,47 +22,72 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetupB
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetup", "BUILDLet.PackageMakerSetup\BUILDLet.PackageMakerSetup.wixproj", "{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BEB61A64-5B1C-4577-8733-8A7E55808004}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PackageMaker.PowerShell", "BUILDLet.PackageMaker.PowerShell", "{F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}"
 	ProjectSection(SolutionItems) = preProject
-		..\Common\InstallerGUID.wxi = ..\Common\InstallerGUID.wxi
-		..\Common\Manufacturer.wxi = ..\Common\Manufacturer.wxi
-		..\Common\ResourceFiles.wxi = ..\Common\ResourceFiles.wxi
-	EndProjectSection
-EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup", "BUILDLet.PowerShell.PackageMakerSetup\BUILDLet.PowerShell.PackageMakerSetup.wixproj", "{B52F164C-10FC-4907-9BEF-5D25D5A8888A}"
-EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetup64", "BUILDLet.PowerShell.PackageMakerSetup64\BUILDLet.PowerShell.PackageMakerSetup64.wixproj", "{61C69C76-4117-4576-BBAF-946CB84E4EBD}"
-EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PowerShell.PackageMakerSetupBootstrapper", "BUILDLet.PowerShell.PackageMakerSetupBootstrapper\BUILDLet.PowerShell.PackageMakerSetupBootstrapper.wixproj", "{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B52F164C-10FC-4907-9BEF-5D25D5A8888A} = {B52F164C-10FC-4907-9BEF-5D25D5A8888A}
-		{61C69C76-4117-4576-BBAF-946CB84E4EBD} = {61C69C76-4117-4576-BBAF-946CB84E4EBD}
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PowerShell.PackageMaker", "BUILDLet.PowerShell.PackageMaker", "{F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}"
-	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psd1
-		BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psm1 = BUILDLet.PowerShell.PackageMaker\BUILDLet.PowerShell.PackageMaker.psm1
-		BUILDLet.PowerShell.PackageMaker\Release.ps1 = BUILDLet.PowerShell.PackageMaker\Release.ps1
+		BUILDLet.PackageMaker.PowerShell\Build.ps1 = BUILDLet.PackageMaker.PowerShell\Build.ps1
+		BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1 = BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1
+		BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psm1 = BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psm1
+		BUILDLet.PackageMaker.PowerShell\Release.ps1 = BUILDLet.PackageMaker.PowerShell\Release.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleData", "SampleData", "{43661676-1424-40BB-AD81-8D8AC6FBABF0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SamplePackage", "SamplePackage", "{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB}"
 	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\build.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\build.ps1
-		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\check.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\check.ps1
-		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\init.ps1 = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\init.ps1
-		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\ReleaseNotes.html = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\ReleaseNotes.html
-		BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\sample.ini = BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\sample.ini
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\build.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\build.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\check.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\check.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\init.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\init.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\ReleaseNotes.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\ReleaseNotes.html
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.ini = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.ini
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PowerShell.PackageMakerTest", "BUILDLet.PowerShell.PackageMakerTest", "{B36DF3E2-C202-4E64-A0E9-27E3FE8558C1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PackageMaker.PowerShellTest", "BUILDLet.PackageMaker.PowerShellTest", "{B36DF3E2-C202-4E64-A0E9-27E3FE8558C1}"
 	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1 = BUILDLet.PowerShell.PackageMakerTest\BUILDLet.PowerShell.PackageMaker.Tests.ps1
+		BUILDLet.PackageMaker.PowerShellTest\BUILDLet.PackageMaker.PowerShell.Tests.ps1 = BUILDLet.PackageMaker.PowerShellTest\BUILDLet.PackageMaker.PowerShell.Tests.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DDF9300B-7BBE-415B-8629-7F3F1826B2D9}"
+	ProjectSection(SolutionItems) = preProject
+		..\Common\InstallerGUID.wxi = ..\Common\InstallerGUID.wxi
+		..\Common\Manufacturer.wxi = ..\Common\Manufacturer.wxi
+		..\Common\ResourceFiles.wxi = ..\Common\ResourceFiles.wxi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{9EE28D62-01E3-42F0-8DFE-3FC75BD578E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{AA2D2933-4CBE-4641-9CED-FE37E1161F50}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMaker.PowerShellSetup", "BUILDLet.PackageMaker.PowerShellSetup\BUILDLet.PackageMaker.PowerShellSetup.wixproj", "{B52F164C-10FC-4907-9BEF-5D25D5A8888A}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMaker.PowerShellSetup64", "BUILDLet.PackageMaker.PowerShellSetup64\BUILDLet.PackageMaker.PowerShellSetup64.wixproj", "{61C69C76-4117-4576-BBAF-946CB84E4EBD}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMaker.PowerShellSetupBootstrapper", "BUILDLet.PackageMaker.PowerShellSetupBootstrapper\BUILDLet.PackageMaker.PowerShellSetupBootstrapper.wixproj", "{929AF0F9-BB11-4CC5-B6D7-33DF9911D280}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B52F164C-10FC-4907-9BEF-5D25D5A8888A} = {B52F164C-10FC-4907-9BEF-5D25D5A8888A}
+		{61C69C76-4117-4576-BBAF-946CB84E4EBD} = {61C69C76-4117-4576-BBAF-946CB84E4EBD}
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dsakam.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = BUILDLet.PackageMaker.PowerShellSetup\\BUILDLet.PackageMaker.PowerShellSetup.wixproj
+		SccProjectName0 = BUILDLet.PackageMaker.PowerShellSetup
+		SccAuxPath0 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath0 = BUILDLet.PackageMaker.PowerShellSetup
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = BUILDLet.PackageMaker.PowerShellSetup64\\BUILDLet.PackageMaker.PowerShellSetup64.wixproj
+		SccProjectName1 = BUILDLet.PackageMaker.PowerShellSetup64
+		SccAuxPath1 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath1 = BUILDLet.PackageMaker.PowerShellSetup64
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = BUILDLet.PackageMaker.PowerShellSetupBootstrapper\\BUILDLet.PackageMaker.PowerShellSetupBootstrapper.wixproj
+		SccProjectName2 = BUILDLet.PackageMaker.PowerShellSetupBootstrapper
+		SccAuxPath2 = https://dsakam.visualstudio.com/defaultcollection
+		SccLocalPath2 = BUILDLet.PackageMaker.PowerShellSetupBootstrapper
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -150,8 +175,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6E889817-C38C-47C6-B0D9-54BF15A05F1D} = {027248A7-BA3C-4E13-A293-B7365A7DB6D2}
-		{BEB61A64-5B1C-4577-8733-8A7E55808004} = {6E889817-C38C-47C6-B0D9-54BF15A05F1D}
 		{43661676-1424-40BB-AD81-8D8AC6FBABF0} = {F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}
 		{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB} = {43661676-1424-40BB-AD81-8D8AC6FBABF0}
+		{9EE28D62-01E3-42F0-8DFE-3FC75BD578E9} = {DDF9300B-7BBE-415B-8629-7F3F1826B2D9}
+		{AA2D2933-4CBE-4641-9CED-FE37E1161F50} = {DDF9300B-7BBE-415B-8629-7F3F1826B2D9}
 	EndGlobalSection
 EndGlobal
