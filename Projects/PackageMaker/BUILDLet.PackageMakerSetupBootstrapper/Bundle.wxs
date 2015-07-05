@@ -12,17 +12,23 @@
 
   <!-- GUID -->
   <?define GUID_UpgradeCode="$(var.GUID_PackageMaker_ExePackage_UpgradeCode)"?>
-  
+
+  <!-- Source Files (Common) -->
+  <?define Source_LicenseFile="$(var.Resource_LicenseFile_RTF)"?>
+  <?define Source_LogoFile="$(var.Resource_LogoFile_PSPackageMakerSetupBootstrapper)"?>
+
   <!-- Source Files -->
-  <?define Source_PSUtilitySetup="$(var.ProductComponent_PSUtilitySetupBootstrapper)"?>
-  <?define Source_PSPackageMakerSetup="$(var.ProductComponent_PSPackageMakerSetupBootstrapper)"?>
-  <?define Source_PackageMakerSetup="$(var.ProductComponent_PackageMakerSetup)"?>
+  <?define Source_PSUtilitySetup="$(var.Resource_PSUtilitySetupBootstrapper)"?>
+  <?define Source_PSPackageMakerSetup="$(var.Resource_PSPackageMakerSetupBootstrapper)"?>
+  <?define Source_PackageMakerSetup="$(var.Resource_PackageMakerSetup)"?>
 
   <!-- Source Files (.NET Framework 4.5) -->
   <?define Source_dotNetFx45_ja="$(var.Redist_dotNetFx45_ja)"?>
   <?define Source_dotNetFx45_en="$(var.Redist_dotNetFx45_en)"?>
 
-  
+  <!-- Launch Target -->
+  <?define LaunchTarget="[ProgramFilesFolder]$(var.PackageMaker_ProductFolderName)\Readme.txt"?>
+
 
   <!-- Bundle -->
   <Bundle Name="$(var.PackageMaker_ProductName) $(var.Version)"
@@ -35,11 +41,11 @@
     <!-- BootstrapperApplicationRef -->
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkSidebarLicense">
       <bal:WixStandardBootstrapperApplication LicenseUrl=""
-                                              LogoFile="$(var.LogoFile_PSPackageMakerSetupBootstrapper)"
+                                              LogoFile="$(var.Source_LogoFile)"
                                               ShowVersion="yes"
                                               SuppressOptionsUI="yes"
-                                              LaunchTarget="[ProgramFilesFolder]$(var.PackageMaker_ProductFolderName)\Readme.txt" />
-                                         <!-- LicenseFile="$(var.LicenseFile_RTF)" -->
+                                              LaunchTarget="$(var.LaunchTarget)" />
+                                         <!-- LicenseFile="$(var.Source_LicenseFile)" -->
     </BootstrapperApplicationRef>
 
     
@@ -57,14 +63,14 @@
       <PackageGroupRef Id="NetFx45Web" />
       -->
 
-      <!-- BUILDLet.PowerShell.Utilities -->
+      <!-- BUILDLet.Utilities.PowerShell -->
       <ExePackage SourceFile="$(var.Source_PSUtilitySetup)"
                   DetectCondition="(PSUtility_Version &gt;= &quot;$(var.Version).0&quot;) AND (PSUtility_Version &gt;= &quot;$(var.Version).0&quot;)"
                   Permanent="yes"
                   InstallCommand="/q /hideconsole"
                   UninstallCommand="/q /uninstall /hideconsole" />
 
-      <!-- BUILDLet.PowerShell.PackageMaker -->
+      <!-- BUILDLet.PackageMaker.PowerShell -->
       <ExePackage SourceFile="$(var.Source_PSPackageMakerSetup)"
                   DetectCondition="(PSPackageMaker_Version &gt;= &quot;$(var.Version).0&quot;) AND (PSPackageMaker_Version &gt;= &quot;$(var.Version).0&quot;)"
                   Permanent="yes"

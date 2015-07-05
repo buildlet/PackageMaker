@@ -18,15 +18,17 @@
   <?define ProductComment="$(var.PackageMaker_ProductComment)"?>
   <?define ProductFolderName="$(var.PackageMaker_ProductFolderName)"?>
 
+  <!-- Source Files (Common) -->
+  <?define Source_ReadmeFile="$(var.Resource_ReadmeFile_PackageMaker)"?>
+  <?define Source_LicenseFile="$(var.Resource_LicenseFile_TXT)"?>
+
   <!-- Source Files -->
   <?define Source_ProductComponent=""?>
-  <?define Source_ReadmeFile="$(var.ReadmeFile_PackageMaker)"?>
-  <?define Source_SampleDataFile="$(var.ProductComponent_PackageMaker_SampleDataFile)"?>
+  <?define Source_SampleDataFile="$(var.Resource_PackageMaker_SampleDataFile)"?>
 
   
   <!-- Texts -->
   <?define FeatureTitle_SampleData="Sample Data"?>
-
 
   
   <!-- Product -->
@@ -91,7 +93,7 @@
       <!-- Documents (Readme and License) -->
       <Component Id="Documents" Guid="$(var.GUID_Documents)" KeyPath="yes">
         <File Source="$(var.Source_ReadmeFile)" />
-        <File Source="$(var.LicenseFile_TXT)" />
+        <File Source="$(var.Source_LicenseFile)" />
       </Component>
     
     </ComponentGroup>
