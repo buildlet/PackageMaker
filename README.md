@@ -1,7 +1,7 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  Version **1.2.0.0**
+PackageMaker Toolkit  **Version 1.2.0.0**
 
 概要
 ----
@@ -9,9 +9,11 @@ PackageMaker Toolkit  Version **1.2.0.0**
 作成するための PowerShell コマンド群です。以下の2つの PowerShell モジュールと
 ソフトウェアパッケージ作成のためのサンプルが含まれます。
 
-  1. BUILDLet Utility PowerShell Module Version 1.2.0.0 (BUILDLet.Utilities.PowerShell Version 1.2.0.0)
-  2. BUILDLet PackageMaker PowerShell Module Version 1.2.0.0 (BUILDLet.PackageMaker.PowerShell Version 1.2.0.0)
-  3. Sample Script Version 1.2.0.0
+  1. BUILDLet Utility PowerShell Module *Version 1.2.0.0*  
+     (BUILDLet.Utilities.PowerShell *Version 1.2.0.0*)
+  2. BUILDLet PackageMaker PowerShell Module *Version 1.2.0.0*  
+     (BUILDLet.PackageMaker.PowerShell *Version 1.2.0.0*)
+  3. Sample Script *Version 1.2.0.0*
 
 
 インストール方法
