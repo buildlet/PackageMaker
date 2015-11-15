@@ -9,8 +9,9 @@ PackageMaker Toolkit  Version **1.2.0.0**
 作成するための PowerShell コマンド群です。以下の2つの PowerShell モジュールと
 ソフトウェアパッケージ作成のためのサンプルが含まれます。
 
-  1. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
-  2. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
+  1. BUILDLet Utility PowerShell Module Version 1.2.0.0 (BUILDLet.Utilities.PowerShell Version 1.2.0.0)
+  2. BUILDLet PackageMaker PowerShell Module Version 1.2.0.0 (BUILDLet.PackageMaker.PowerShell Version 1.2.0.0)
+  3. Sample Script Version 1.2.0.0
 
 
 インストール方法
@@ -200,7 +201,7 @@ PowerShell サンプルスクリプトを含むソフトウェアパッケージ
 SamplePackage.zip を任意のフォルダに解凍し、展開されたフォルダーで下記のコマンドを実行すると、
 ソフトウェアパッケージのサンプル、および、そのISOイメージ ファイルが (再) 作成されます。
 
-    .\init.ps1; .\build.ps1; .\check.ps1
+    .\Build.ps1
 
 
 ライセンス
