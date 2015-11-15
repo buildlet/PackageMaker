@@ -27,8 +27,12 @@ PackageMakerSetup.exe を実行してください。
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
-  3. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
+  2. BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell)
+
+PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
+Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
+BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストール
+されないので、必要に応じて個別にアンインストールしてください。
 
 
 動作環境
@@ -211,17 +215,27 @@ SamplePackage.zip を任意のフォルダに解凍し、展開されたフォ�
 
 ライセンス
 ----------
+
 このソフトウェアは MIT ライセンスの下で配布されます。
 License.txt を参照してください。
 
 
 変更履歴
 --------
-* 2015/07/05    Version 1.1.3.0    Readme の誤記を訂正。
+* 2015/11/15    Version 1.2.0.0
+  サンプルパッケージを刷新。
+  PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell Module 
+  (BUILDLet.PackageMaker.PowerShell) もアンインストールされるよう仕様変更。
+* 2015/07/20    Version 1.1.3.0    マイナーアップデート
+  インストーラーのアイコン画像の微修正。
+* 2015/07/07    Version 1.1.3.0    Readme の誤記を訂正。
 * 2015/07/04    Version 1.1.2.0    マイナーアップデート
-* 2015/06/05    Version 1.1.1.0
+  BUILDLet Utility PowerShell Module の名前が BUILDLet.PowerShell.Utilities から 
+  BUILDLet.Utilities .PowerShell に変更。
+  
+* 2015/06/05    Version 1.1.1.0    マイナーアップデート
   BUILDLet.PowerShell.Utilities モジュールのバージョン誤りを修正・改善。
 
 * 2015/06/02    Version 1.1.0.0    マイナーアップデート (Readme ファイルを更新)
-* 2015/05/29    Version 1.0.8.0    Readme ファイルを更新
+* 2015/05/29    Version 1.0.8.0    Readme ファイルを更新。
 * 2015/05/27    Version 1.0.7.0    初版
