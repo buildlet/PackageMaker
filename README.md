@@ -1,7 +1,7 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  Version **1.1.2.0**
+PackageMaker Toolkit  Version **1.2.0.0**
 
 概要
 ----
@@ -23,8 +23,12 @@ PackageMakerSetup.exe を実行してください。
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
-  3. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
+  2. BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell)
+
+PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
+Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
+BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストール
+されないので、必要に応じて個別にアンインストールしてください。
 
 
 動作環境
@@ -215,6 +219,12 @@ BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](http
 
 変更履歴
 --------
+### Version 1.2.0.0
+**2015/11/15**  
+サンプルパッケージを刷新。
+PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell Module 
+(BUILDLet.PackageMaker.PowerShell) もアンインストールされるよう仕様変更。
+
 ### Version 1.1.2.0
 **2015/07/05**  
 BUILDLet.PowerShell.Utilities を BUILDLet.Utilities.PowerShell に変更。  
