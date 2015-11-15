@@ -32,7 +32,7 @@ Copyright (C) 2015 Daiki Sakamoto
 ####################################################################################################
 
 # Version
-$version = '1.1.2.0'
+$version = '1.2.0.0'
 
 # VerbosePreference
 $Script:VerbosePreference = 'SilentlyContinue'
@@ -91,7 +91,7 @@ $inf2cat_path     = 'C:\Program Files (x86)\Windows Kits\8.1\bin\x86\Inf2Cat.exe
 $genisoimage_path = 'C:\cygwin\bin\genisoimage.exe'
 
 # Test Data Folder (PathInfo)
-$test_data_dir = Resolve-Path -Path '..\..\Common\TestData'
+$test_data_dir = Resolve-Path -Path '..\..\Common\TestData\PackageMaker'
 
 ####################################################################################################
 # Functions only for tests
@@ -228,7 +228,7 @@ if ($test_target[$target]) {
         go_to_work
 
         # set Package Path
-        $source_file = Join-Path $test_data_dir -ChildPath 'package.zip'
+        $source_file = Join-Path -Path $test_data_dir -ChildPath 'package.zip'
         $package_path = Expand-ZipFile -Path $source_file -Force -PassThru
         $package_path = $package_path | Join-Path -ChildPath (Split-Path -Path $package_path -Leaf)
 
@@ -276,7 +276,12 @@ if ($test_target[$target]) {
         # Create source file
         $test_dir = 'IsoFileTest'
         $root_dir = Join-Path $test_dir -ChildPath 'RootDirectory'
-        Expand-ZipFile -Path (Join-Path -Path $test_data_dir -ChildPath 'RootDirectory.zip') -DestinationPath . -FolderName $test_dir -Force -PassThru
+        Expand-ZipFile `
+            -Path ($test_data_dir | Split-Path -Parent | Join-Path -ChildPath 'Utilities' | Join-Path -ChildPath 'RootDirectory.zip') `
+            -DestinationPath . `
+            -FolderName $test_dir `
+            -Force `
+            -PassThru
 
 
 	    # Default

@@ -576,7 +576,7 @@ Function New-IsoFile
         # Construct ArgumentList
         [string[]]$arguments = @()
         $Options | ? { -not [string]::IsNullOrEmpty($_) } | % { $arguments += $_ }
-        $arguments += ('-o "' + $output_path + '"')
+        $arguments += ('-output "' + $output_path + '"')
         $arguments += ('"' + $Path + '"')
 
 

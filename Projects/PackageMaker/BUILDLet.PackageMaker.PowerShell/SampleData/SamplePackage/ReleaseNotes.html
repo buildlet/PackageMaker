@@ -5,11 +5,11 @@
         <style type="text/css">
             <!--
 
-            #version:before   { content: "BUILDLet PowerShell PackageMaker Toolkit" " "; }
-            #version:after    { content: "1.1.2.0" }
+            #version:before   { content: "BUILDLet PackageMaker Toolkit"; }
+            #version:after    { content: "1.2.0.0" }
 
-            #copyright:before { content: "Copyright (C)" " "; }
-            #copyright:after  { content: "2015 Daiki Sakamoto"; }
+            #copyright:before { content: "Copyright (C)"; }
+            #copyright:after  { content: "2015 Daiki Sakamoto All rights reserved."; }
 
             #project_name {
                 font-weight: bold;
@@ -84,8 +84,8 @@
                 padding: 5px 30px 10px 30px;
             }
 
-            div.main {
-                margin-bottom: 2em;
+            div.project, div.model, div.language, div.limitation {
+                margin-bottom: 3em;
             }
 
             div.footer { }
@@ -116,49 +116,20 @@
 
             <p class="date">__DATE__</p>
 
-            <p>This is sapmle release notes for <span id="project_name">__PROJECT__ Version __PROJECTVERSION__</span>.</p>
+            <p>This is sapmle release notes for <span id="project_name">__PROJECT_NAME__ Version __PROJECT_VERSION__</span>.</p>
+            <br/>
 
-
-            <div class="main">
+            <div class="project">
+            
                 <h2>Version Information</h2>
-
-                __VERSIONS__
-
-#                <h3>__MODEL__</h3>
-#
-##                   <h4>__LANGUAGE__</h4>
-##
-##                   <table>
-##                        <caption>Version Information (__LANGUAGE__)</caption>
-##                       <thead>
-##                            <tr>
-##                                <td>Driver</td>
-##                                <td>OS</td>
-##                                <td>Version</td>
-##                                <td>Date</td>
-##                                <td>Signature</td>
-##                            </tr>
-##                       </thead>
-##                        <tbody>
-##                            __DRIVERVERSIONS__
-
-###                            <tr>
-###                                <td>__DRIVER__</td>
-###                                <td>__OS__</td>
-###                                <td>__VERSION__</td>
-###                                <td>__DATE__</td>
-###                                <td>__SIGNATURE__</td>
-###                           </tr>
-
-##                        </tbody>
-##                    </table>
-
-                <h2>Limitation</h2>
-
-                <p>There might be some limitations.</p>
-
+                
+                __MODELS__
+                
+                __LIMITATION__
+                
+                <p/>
+                
             </div>
-
 
             <div class="footer">
                 <hr class="footer" />

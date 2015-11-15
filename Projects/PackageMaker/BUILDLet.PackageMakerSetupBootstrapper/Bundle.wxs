@@ -73,7 +73,7 @@
       <!-- BUILDLet.PackageMaker.PowerShell -->
       <ExePackage SourceFile="$(var.Source_PSPackageMakerSetup)"
                   DetectCondition="(PSPackageMaker_Version &gt;= &quot;$(var.Version).0&quot;) AND (PSPackageMaker_Version &gt;= &quot;$(var.Version).0&quot;)"
-                  Permanent="yes"
+                  Permanent="no"
                   InstallCommand="/q /hideconsole"
                   UninstallCommand="/q /uninstall /hideconsole" />
       

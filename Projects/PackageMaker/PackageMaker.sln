@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{027248A7-BA3C-4E13-A293-B7365A7DB6D2}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,7 +24,6 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetup"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PackageMaker.PowerShell", "BUILDLet.PackageMaker.PowerShell", "{F3B6A85B-EA3B-4CA3-AAC0-44ACD2756EC3}"
 	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PackageMaker.PowerShell\Build.ps1 = BUILDLet.PackageMaker.PowerShell\Build.ps1
 		BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1 = BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psd1
 		BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psm1 = BUILDLet.PackageMaker.PowerShell\BUILDLet.PackageMaker.PowerShell.psm1
 		BUILDLet.PackageMaker.PowerShell\Release.ps1 = BUILDLet.PackageMaker.PowerShell\Release.ps1
@@ -34,11 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleData", "SampleData", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SamplePackage", "SamplePackage", "{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB}"
 	ProjectSection(SolutionItems) = preProject
-		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\build.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\build.ps1
-		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\check.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\check.ps1
-		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\init.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\init.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\00_initialize.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\00_initialize.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\01_import_IniFile.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\01_import_IniFile.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\02_renew_CatFile.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\02_renew_CatFile.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\03_sign_to_File.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\03_sign_to_File.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\04_update_ReadmeFile.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\04_update_ReadmeFile.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\11_create_ReleaseNotes.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\11_create_ReleaseNotes.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\99_finalize.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\99_finalize.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Build.ps1 = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Build.ps1
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Driver.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Driver.html
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Language.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Language.html
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Limitaion.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Limitaion.html
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Model.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Model.html
 		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\ReleaseNotes.html = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\ReleaseNotes.html
 		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.ini = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.ini
+		BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.pfx = BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\sample.pfx
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BUILDLet.PackageMaker.PowerShellTest", "BUILDLet.PackageMaker.PowerShellTest", "{B36DF3E2-C202-4E64-A0E9-27E3FE8558C1}"
@@ -66,6 +75,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMaker.Power
 		{B52F164C-10FC-4907-9BEF-5D25D5A8888A} = {B52F164C-10FC-4907-9BEF-5D25D5A8888A}
 		{61C69C76-4117-4576-BBAF-946CB84E4EBD} = {61C69C76-4117-4576-BBAF-946CB84E4EBD}
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{5297D4A0-2DF9-4600-9864-E274BDB23F18}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
@@ -179,5 +190,6 @@ Global
 		{6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB} = {43661676-1424-40BB-AD81-8D8AC6FBABF0}
 		{9EE28D62-01E3-42F0-8DFE-3FC75BD578E9} = {DDF9300B-7BBE-415B-8629-7F3F1826B2D9}
 		{AA2D2933-4CBE-4641-9CED-FE37E1161F50} = {DDF9300B-7BBE-415B-8629-7F3F1826B2D9}
+		{5297D4A0-2DF9-4600-9864-E274BDB23F18} = {6A6145F1-FAB8-4093-B276-0FA5F2AAD9EB}
 	EndGlobalSection
 EndGlobal
