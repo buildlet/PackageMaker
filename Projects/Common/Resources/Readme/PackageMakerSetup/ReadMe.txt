@@ -20,8 +20,7 @@
 
 PackageMakerSetup.exe を実行してください。
 
-インストールウィザードの終了画面で Launch ボタンをクリックすると、
-この Readme が表示されます。
+インストールウィザードの終了画面で Launch ボタンをクリックすると、この Readme が表示されます。
 
 
 アンインストール方法
@@ -71,7 +70,7 @@ PowerShell モジュールは、32ビットOSの場合は %ProgramFiles%\Windows
 に保存されます。64ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules および 
 %ProgramFiles(x86)%\WindowsPowerShell\Modules にインストールされます。
 これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけで
-モジュールがインポートできす。インポートできないときは下記のコマンドを実行して 
+モジュールをインポートすることができます。インポートできないときは下記のコマンドを実行して 
 BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell が表示される
 ことを確認してください。
 
