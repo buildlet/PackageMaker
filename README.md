@@ -46,6 +46,16 @@ BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには�
   2. Windows Driver Kit (WDK) for Windows 8.1  [Inf2Cat.exe]
   3. Cygwin  [genisoimage.exe]
 
+### SignTool のインストールについて
+SingTool は Windows Software Development Kit (SDK) for Windows 8.1 をインストールする際に、"Windows Software Development Kit"  （下図参照）を選択するとインストールされます。
+
+![SignTool](/images/SignTool.png "SignTool")
+  
+### genisoimage のインストールについて
+Cygwin をインストールする際に、genisoimage を選択します。（下図参照）
+
+![genisoimage](/images/genisoimage.png "genisoimage")
+
 
 Windows 7 Ultimate x64 で動作を確認しています。
 
