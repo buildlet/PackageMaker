@@ -8,10 +8,10 @@
 作成するための PowerShell コマンド群です。
 2つの PowerShell モジュールとソフトウェアパッケージ作成のためのサンプルが含まれます。
 
-  1. BUILDLet Utility PowerShell Module Version 1.2.0.0
+  1. BUILDLet Utility PowerShell Module Version 1.2.0
     (BUILDLet.Utilities.PowerShell Version 1.2.0.0)
-  2. BUILDLet PackageMaker PowerShell Module Version 1.2.0.0
-    (BUILDLet.PackageMaker.PowerShell Version 1.2.0.0)
+  2. BUILDLet PackageMaker PowerShell Module Version 1.2.1
+    (BUILDLet.PackageMaker.PowerShell Version 1.2.1.0)
   3. Sample Script Version 1.2.0.0
 
 
