@@ -8,8 +8,11 @@
 作成するための PowerShell コマンド群です。
 2つの PowerShell モジュールとソフトウェアパッケージ作成のためのサンプルが含まれます。
 
-  1. BUILDLet Utility PowerShell Module      (BUILDLet.Utilities.PowerShell)
-  2. BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell)
+  1. BUILDLet Utility PowerShell Module Version 1.2.0.0
+    (BUILDLet.Utilities.PowerShell Version 1.2.0.0)
+  2. BUILDLet PackageMaker PowerShell Module Version 1.2.0.0
+    (BUILDLet.PackageMaker.PowerShell Version 1.2.0.0)
+  3. Sample Script Version 1.2.0.0
 
 
 インストール方法
@@ -27,7 +30,7 @@ PackageMakerSetup.exe を実行してください。
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell)
+  2. BUILDLet Utility PowerShell Module
 
 PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
 Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
@@ -210,7 +213,7 @@ PowerShell サンプルスクリプトを含むソフトウェアパッケージ
 SamplePackage.zip を任意のフォルダに解凍し、展開されたフォルダーで下記のコマンドを実行すると、
 ソフトウェアパッケージのサンプル、および、そのISOイメージ ファイルが (再) 作成されます。
 
-    .\init.ps1; .\build.ps1; .\check.ps1
+    .\Build.ps1
 
 
 ライセンス
@@ -222,12 +225,15 @@ License.txt を参照してください。
 
 変更履歴
 --------
+* 2015/11/15    Version 1.2.1.0    Readme ファイルの誤記を訂正・更新。
 * 2015/11/15    Version 1.2.0.0
   サンプルパッケージを刷新。
   PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell Module 
   (BUILDLet.PackageMaker.PowerShell) もアンインストールされるよう仕様変更。
+
 * 2015/07/20    Version 1.1.3.0    マイナーアップデート
   インストーラーのアイコン画像の微修正。
+
 * 2015/07/07    Version 1.1.3.0    Readme の誤記を訂正。
 * 2015/07/04    Version 1.1.2.0    マイナーアップデート
   BUILDLet Utility PowerShell Module の名前が BUILDLet.PowerShell.Utilities から 
