@@ -26,7 +26,7 @@ PackageMakerSetup.exe を実行してください。
 コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell)
+  2. BUILDLet Utility PowerShell Module
 
 PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
 Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
