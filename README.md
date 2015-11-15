@@ -1,13 +1,12 @@
 PackageMaker
 ============
 
-PackageMaker Toolkit  **Version 1.2.0.0**
+PackageMaker Toolkit  **Version 1.2.1.0**
 
 概要
 ----
-ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを
-作成するための PowerShell コマンド群です。以下の2つの PowerShell モジュールと
-ソフトウェアパッケージ作成のためのサンプルが含まれます。
+ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを作成するための PowerShell コマンド群です。
+以下の2つの PowerShell モジュールとソフトウェアパッケージ作成のためのサンプルが含まれます。
 
   1. BUILDLet Utility PowerShell Module *Version 1.2.0.0*  
      (BUILDLet.Utilities.PowerShell *Version 1.2.0.0*)
@@ -28,23 +27,19 @@ PackageMakerSetup.exe を実行してください。
   1. BUILDLet PackageMaker Toolkit
   2. BUILDLet Utility PowerShell Module
 
-PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
-Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
-BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストール
-されないので、必要に応じて個別にアンインストールしてください。
+PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
+BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストールされないので、必要に応じて個別にアンインストールしてください。
 
 
 動作環境
 --------
-BUILDLet.Utilities.PowerShell を実行するためには、下記のソフトウェアがインストール
-されている必要があります。
+BUILDLet.Utilities.PowerShell を実行するためには、下記のソフトウェアがインストールされている必要があります。
 
   1. Windows Management Framework 4.0 (Windows PowerShell 4.0)
   2. Microsoft .NET Framework 4.5
 
 
-BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには、
-実行環境に下記のソフトウェアがインストールされている必要があります。
+BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには、実行環境に下記のソフトウェアがインストールされている必要があります。
 ( [] で記載してあるプログラムが必要です。 )
 
   1. Windows Software Development Kit (SDK) for Windows 8.1  [SignTool.exe]
@@ -61,32 +56,25 @@ Windows 7 Ultimate x64 で動作を確認しています。
 
     Import-Module BUILDLet.PackageMaker.PowerShell
 
-PowerShell モジュールは、32ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules 
-に保存されます。64ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules および 
-%ProgramFiles(x86)%\WindowsPowerShell\Modules にインストールされます。
-これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけで
-モジュールがインポートできす。インポートできないときは下記のコマンドを実行して 
-BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell が表示される
-ことを確認してください。
+PowerShell モジュールは、32ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules に保存されます。
+64ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules および %ProgramFiles(x86)%\WindowsPowerShell\Modules にインストールされます。
+これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけでモジュールをインポートすることができます。
+インポートできないときは下記のコマンドを実行して BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell が表示されることを確認してください。
 
     Get-Module -ListAvailable
 
 
-BUILDLet.PackageMaker.PowerShell をインポートするためには、BUILDLet.Utilities.PowerShell 
-が事前にインポートされている必要があるため、BUILDLet.PackageMaker.PowerShell を
-インポートすると BUILDLet.Utilities.PowerShell も自動的にインポートされます。
+BUILDLet.PackageMaker.PowerShell をインポートするためには、BUILDLet.Utilities.PowerShell が事前にインポートされている必要があるため、BUILDLet.PackageMaker.PowerShell をインポートすると BUILDLet.Utilities.PowerShell も自動的にインポートされます。
 
 
 使用方法
 --------
-BUILDLet PackageMaker Toolkit には、下記の PowerShell コマンド (Function および Cmdlet) 、
-変数、および、サンプルスクリプトを含むソフトウェアパッケージのサンプルが含まれます。
+BUILDLet PackageMaker Toolkit には、下記の PowerShell コマンド (Function および Cmdlet) 、変数、および、サンプルスクリプトを含むソフトウェアパッケージのサンプルが含まれます。
 
 
 ### コマンド (Function または Cmdlet)
 
-BUILDLet.Utilities.PowerShell をインポートすると、
-以下のコマンド (Function または Cmdlet) がインポートされます。
+BUILDLet.Utilities.PowerShell をインポートすると、以下のコマンド (Function または Cmdlet) がインポートされます。
 詳細は各コマンドのヘルプを参照してください。
 ( Cmdlet は、コマンドのみを入力するとコマンドの概要が表示されます。 )
 
@@ -222,6 +210,10 @@ BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](http
 
 変更履歴
 --------
+### Version 1.2.1.0
+**2015/11/15**  
+Readme ファイルの誤記を訂正・更新。
+
 ### Version 1.2.0.0
 **2015/11/15**  
 サンプルパッケージを刷新。
