@@ -6,10 +6,10 @@ Copyright (C) 2015 Daiki Sakamoto
 "@
 
 $Target_Projects = @(
-    "BUILDLet.PowerShell.PackageMakerTest"
-    "BUILDLet.PowerShell.PackageMakerSetup"
-    "BUILDLet.PowerShell.PackageMakerSetup64"
-    "BUILDLet.PowerShell.PackageMakerSetupBootstrapper"
+    "BUILDLet.PackageMaker.PowerShellTest"
+    "BUILDLet.PackageMaker.PowerShellSetup"
+    "BUILDLet.PackageMaker.PowerShellSetup64"
+    "BUILDLet.PackageMaker.PowerShellSetupBootstrapper"
     "BUILDLet.PackageMakerSetup"
     "BUILDLet.PackageMakerSetupBootstrapper"
 )
@@ -20,8 +20,8 @@ $Target_Folders = @(
 )
 
 $Additional_Files = @(
-    "BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\Work"
-    "BUILDLet.PowerShell.PackageMaker\SampleData\SamplePackage\Release"
+    "BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Work"
+    "BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Release"
 )
 
 $Remove_Folders = @()
