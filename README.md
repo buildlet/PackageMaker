@@ -5,7 +5,7 @@ PackageMaker Toolkit  **Version 1.2.1.0**
 
 概要
 ----
-ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを作成するための PowerShell コマンド群です。
+ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを作成するための PowerShell コマンド群です。  
 以下の2つの PowerShell モジュールとソフトウェアパッケージ作成のためのサンプルが含まれます。
 
   1. BUILDLet Utility PowerShell Module *Version 1.2.0*  
@@ -68,7 +68,7 @@ Windows 7 Ultimate x64 で動作を確認しています。
 
 PowerShell モジュールは、32ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules に保存されます。
 64ビットOSの場合は %ProgramFiles%\WindowsPowerShell\Modules および %ProgramFiles(x86)%\WindowsPowerShell\Modules にインストールされます。
-これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけでモジュールをインポートすることができます。
+これらのパスは $env:PSModulePath に含まれているので、上記のコマンドを入力するだけでモジュールをインポートすることができます。  
 インポートできないときは下記のコマンドを実行して BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell が表示されることを確認してください。
 
     Get-Module -ListAvailable
@@ -84,7 +84,7 @@ BUILDLet PackageMaker Toolkit には、下記の PowerShell コマンド (Functi
 
 ### コマンド (Function または Cmdlet)
 
-BUILDLet.Utilities.PowerShell をインポートすると、以下のコマンド (Function または Cmdlet) がインポートされます。
+BUILDLet.Utilities.PowerShell をインポートすると、以下のコマンド (Function または Cmdlet) がインポートされます。  
 詳細は各コマンドのヘルプを参照してください。
 ( Cmdlet は、コマンドのみを入力するとコマンドの概要が表示されます。 )
 
@@ -143,7 +143,7 @@ BUILDLet.Utilities.PowerShell をインポートすると、以下のコマン�
   指定されたパスにディレクトリを作成します。
 
 
-BUILDLet.PackageMaker.PowerShell をインポートすると、以下のコマンド (Function) がインポートされます。
+BUILDLet.PackageMaker.PowerShell をインポートすると、以下のコマンド (Function) がインポートされます。  
 詳細は各コマンドのヘルプを参照してください。
 
 #### Get-AuthenticodeTimeStamp (Function)
