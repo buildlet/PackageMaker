@@ -1,18 +1,26 @@
-PackageMaker
-============
+PackageMaker Toolkit
+====================
 
-PackageMaker Toolkit  **Version 1.2.1.0**
+Version 2.0.1.0
+---------------
 
 概要
 ----
-ソフトウェアパッケージとそのISOイメージファイルを作成する PowerShell スクリプトを作成するための PowerShell コマンド群です。  
-以下の2つの PowerShell モジュールとソフトウェアパッケージ作成のためのサンプルが含まれます。
+BUILDLet PackageMaker Toolkit は、ソフトウェアパッケージとその ISO イメージファイルを 
+PowerShell スクリプトによって作成するためのツールキットです。  
+BUILDLet PackageMaker Toolkit には、PowerShell モジュールと PowerShell ビルド スクリプト
+を含むソフトウェアパッケージ作成のためのサンプル データが含まれます。
 
-  1. BUILDLet Utility PowerShell Module *Version 1.2.0*  
-     (BUILDLet.Utilities.PowerShell *Version 1.2.0.0*)
-  2. BUILDLet PackageMaker PowerShell Module *Version 1.2.1*  
-     (BUILDLet.PackageMaker.PowerShell *Version 1.2.1.0*)
-  3. Sample Script *Version 1.2.0.0*
+BUILDLet PackageMaker Toolkit をインストールすると、次のモジュールがインストールされます。
+
+  1. BUILDLet PackageMaker Toolkit Version 2.0.1  
+    (Sample Script Version 2.0.1.0 が含まれます。)
+
+  2. BUILDLet PackageMaker PowerShell Module Version 2.0.1  
+    (BUILDLet.PackageMaker.PowerShell Version 2.0.1.0)
+
+  3. BUILDLet Utilities PowerShell Module Version 2.0.1  
+    (BUILDLet.Utilities.PowerShell Version 2.0.1.0)
 
 
 インストール方法
@@ -22,29 +30,34 @@ PackageMakerSetup.exe を実行してください。
 
 アンインストール方法
 --------------------
-コントロールパネルから下記のプログラムを選択してアンインストールを実行してください。
+コントロールパネルから次のプログラムを選択してアンインストールを実行してください。
 
   1. BUILDLet PackageMaker Toolkit
-  2. BUILDLet Utility PowerShell Module
+  2. BUILDLet Utilities PowerShell Module
 
-PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。
-BUILDLet Utility PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストールされないので、必要に応じて個別にアンインストールしてください。
+PackageMaker Toolkit 本体をアンインストールすると、BUILDLet PackageMaker PowerShell 
+Module (BUILDLet.PackageMaker.PowerShell) もアンインストールされます。  
+BUILDLet Utilities PowerShell Module (BUILDLet.Utilities.PowerShell) はアンインストール
+されないので、必要に応じて個別にアンインストールしてください。
 
 
 動作環境
 --------
-BUILDLet.Utilities.PowerShell を実行するためには、下記のソフトウェアがインストールされている必要があります。
+BUILDLet.Utilities.PowerShell および BUILDLet.PackageMaker.PowerShell を実行するためには、
+実行環境に次のソフトウェアがインストールされている必要があります。
 
   1. Windows Management Framework 4.0 (Windows PowerShell 4.0)
   2. Microsoft .NET Framework 4.5
 
 
-BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには、実行環境に下記のソフトウェアがインストールされている必要があります。
-( [] で記載してあるプログラムが必要です。 )
+BUILDLet.PackageMaker.PowerShell の全ての機能を使用するためには、実行環境に次のソフトウェアが
+インストールされている必要があります。
+([] 内に記載されているプログラムが必要です。)
 
-  1. Windows Software Development Kit (SDK) for Windows 8.1  [SignTool.exe]
-  2. Windows Driver Kit (WDK) for Windows 8.1  [Inf2Cat.exe]
+  1. Windows Software Development Kit (SDK) for Windows 10  [SignTool.exe]
+  2. Windows Driver Kit (WDK) for Windows 10  [Inf2Cat.exe]
   3. Cygwin  [genisoimage.exe]
+
 
 ### SignTool のインストールについて
 SingTool は Windows Software Development Kit (SDK) for Windows 8.1 をインストールする際に、"Windows Software Development Kit"  （下図参照）を選択するとインストールされます。
@@ -57,7 +70,7 @@ Cygwin をインストールする際に、genisoimage を選択します。（�
 ![genisoimage](/images/genisoimage.png "genisoimage")
 
 
-Windows 7 Ultimate x64 で動作を確認しています。
+Windows 10 Pro (1607) x64 および Windows 7 Ultimate Service Pack 1x64 で動作を確認しています。
 
 
 使用準備
@@ -159,37 +172,6 @@ BUILDLet.PackageMaker.PowerShell をインポートすると、以下のコマ�
   Rock Ridge 属性付きハイブリッド ISO9660 / JOLIET / HFS ファイルシステムイメージを作成します。
 
 
-### 変数
-
-BUILDLet.Utilities.PowerShell をインポートすると、以下の変数がインポートされます。
-
-#### $VerbosePromptLength 
-  詳細メッセージの各行の接頭文字列長  
-  ( 日本語環境であれば、"詳細: " なので 6 です。 )
-
-
-BUILDLet.PackageMaker.PowerShell をインポートすると、以下の変数がインポートされます。
-
-#### $GenIsoImageOptions
-  デフォルトで用意されている genisoimage.exe のオプションパラメーターを格納した文字列配列
-
-#### $GenIsoImagePath
-  デフォルトで用意されている genisoimage.exe のファイルパス
-
-#### $Inf2CatPath
-  デフォルトで用意されている Inf2Cat.exe のファイルパス
-
-#### $Inf2CatWindowsVersionList32
-  32 ビット OS 用にデフォルトで用意されている Inf2Cat.exe のオプションパラメーター文字列
-
-#### $Inf2CatWindowsVersionList64
-  64 ビット OS 用にデフォルトで用意されている Inf2Cat.exe のオプションパラメーター文字列
-
-#### $SignToolPath
-  デフォルトで用意されている SignTool.exe のファイルパス
-
-#### $TimeStampServerURL
-  デフォルトで用意されているタイムスタンプサーバーの URL
 
 
 サンプルについて
