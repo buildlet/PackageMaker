@@ -1,9 +1,0 @@
-BUILDLet PackageMaker Toolkit Readme Sample
-Copyright (C) Sunday, November 15, 2015  BUILDLet All rights reserved.
-
-Dummy Package 1.2.3.0
-
-Driver Version (x86) 1.0.32.0
-Driver Version (x64) 1.0.64.0
-
-This is only a dummy file of Readme.

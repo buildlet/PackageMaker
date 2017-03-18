@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <!-- BUILDLet PackageMaker Toolkit -->
+  <?define GUID_PackageMaker_SetupBootstrapper_UpgradeCode="{2B120507-4DCF-4836-96CC-068043BC6D97}"?>
+
+  <!-- BUILDLet.PackageMaker.PowerShell -->
+  <?define GUID_PSPackageMaker_SetupBootstrapper_UpgradeCode="{916D4719-6397-4E16-9138-EED04D48C777}"?>
+
+  
+  <!-- Product Code of BUILDLet.Utilities.PowerShoell (Current) -->
+  <?define GUID_PSUtilities_Product="{092B0AC1-6542-4D19-9467-B1087282FDB4}"?>
+  <?define GUID_PSUtilities64_Product="{9B594029-FFDB-4A45-B881-60D421BC05F6}"?>
+
+
+
+  <!-- BUILDLet PackageMaker Toolkit Version 2.x.x (Current) -->
+  <?define GUID_PackageMaker_UpgradeCode="{33F3C813-AB06-42BF-ACB2-836603497B63}"?>
+  <?define GUID_PackageMaker_Product="{FB0D018F-00C7-4E84-B722-7497A2F4700A}"?>
+  <?define GUID_PackageMaker_ProductComponent="{D3BA6FA4-CAB8-4F03-ABAB-0C11D59167A3}"?>
+  <?define GUID_PackageMaker_Documents="{CDFD8DB0-AA9D-4F04-95A7-CA18E7547903}"?>
+
+  <!-- BUILDLet.Utilities.PowerShell Version 2.x.x (Current) -->
+  <!-- (x86) -->
+  <?define GUID_PSPackageMaker_UpgradeCode="{32D5E8F6-95DB-482A-8C77-8D1E5B80AE52}"?>
+  <?define GUID_PSPackageMaker_Product="{76B03C73-EB52-4C61-9A03-A1EF311A7CE4}"?>
+  <?define GUID_PSPackageMaker_ProductComponent="{C6AC60CF-BCEC-4396-AFC5-4E9DD8EE7CC6}"?>
+  <!-- (x64) -->
+  <?define GUID_PSPackageMaker64_UpgradeCode="{E929B939-C624-45E4-8C36-75C55EFA8A3B}"?>
+  <?define GUID_PSPackageMaker64_Product="{A1A03076-AD8E-4A0A-9F40-7A3CBCFDAA96}"?>
+  <?define GUID_PSPackageMaker64_ProductComponent="{DDE14012-1A65-4842-966B-098A1F0D5FB7}"?>
+
+
+
+  <!-- BUILDLet PackageMaker Toolkit Version 1.x.x (for Backward Compatibility) -->
+  <?define GUID_PackageMaker_Version1xx_UpgradeCode="{A6A4BCB3-C021-4258-8E74-EC18411A2B0B}"?>
+  <?define GUID_PackageMaker_Version1xx_Product="{CB861081-9A97-4D75-A4E7-8730FE7F24CD}"?>
+  <?define GUID_PackageMaker_Version1xx_ProductComponent="{E1CD2775-2E80-4ECF-BD08-4D7EB8190F49}"?>
+  <?define GUID_PackageMaker_Version1xx_Documents="{D31CC5A3-1666-404B-B772-3C2B56FAFF22}"?>
+
+  <!-- BUILDLet.Utilities.PowerShell Version 1.x.x (for Backward Compatibility) -->
+  <!-- (x86) -->
+  <?define GUID_PSPackageMaker_Version1xx_UpgradeCode="{DDEC1EE0-3AA0-4884-8F91-F3797DFED3E1}"?>
+  <?define GUID_PSPackageMaker_Version1xx_Product="{73181F0D-DB55-4244-8F1D-ADB0165E554E}"?>
+  <?define GUID_PSPackageMaker_Version1xx_ProductComponent="{4287CD54-C6A8-4FDD-9CA3-DE5429F8BD07}"?>
+  <!-- (x64) -->
+  <?define GUID_PSPackageMaker64_Version1xx_UpgradeCode="{61FC33B1-A370-4F78-8752-1AD8B604E172}"?>
+  <?define GUID_PSPackageMaker64_Version1xx_Product="{6B32CB98-DCDD-4465-8B3B-928E8CB080B1}"?>
+  <?define GUID_PSPackageMaker64_Version1xx_ProductComponent="{E5A7CB9C-1508-4681-8766-47962A3FA500}"?>
+  
+</Include>

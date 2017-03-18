@@ -1,77 +1,36 @@
-﻿# BUILDLet Cleaning Script
-@"
-BUILDLet Solution Cleaning Script
-Copyright (C) 2015 Daiki Sakamoto
+﻿@"
+****************************************
+ BUILDLet Solution Cleaning Script
+                            Version 2.0
+ Copyright (C) 2015-2017 Daiki Sakamoto
+****************************************
+"@ | Write-Host -ForegroundColor Green
 
-"@
 
-$Target_Projects = @(
-    "BUILDLet.PackageMaker.PowerShellTest"
-    "BUILDLet.PackageMaker.PowerShellSetup"
-    "BUILDLet.PackageMaker.PowerShellSetup64"
-    "BUILDLet.PackageMaker.PowerShellSetupBootstrapper"
-    "BUILDLet.PackageMakerSetup"
-    "BUILDLet.PackageMakerSetupBootstrapper"
+$Targets = @(
+#    '.\bin\*'
+#    '.\obj\*'
+
+    '.\*\bin'
+    '.\*\obj'
+
+    '.\TestResults\*'
 )
 
-$Target_Folders = @(
-    "obj"
-    "bin"
-)
 
-$Additional_Files = @(
-    "BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Work"
-    "BUILDLet.PackageMaker.PowerShell\SampleData\SamplePackage\Release"
-)
+# Get and Set Current Location
+($PSCommandPath | Split-Path -Parent) | Set-Location
 
-$Remove_Folders = @()
+# Show Confirmation Message
+$list = "削除対象ディレクトリ:`n"
+$Targets | ? { $_ | Test-Path } | % { $_ | Convert-Path } | % { $list += "`t$_`n" }
+$confirm_yes = New-Object System.Management.Automation.Host.ChoiceDescription "&Yes", "削除する"
+$confirm_no  = New-Object System.Management.Automation.Host.ChoiceDescription "&No", "削除しない"
+$confirmation = [System.Management.Automation.Host.ChoiceDescription[]]($confirm_yes, $confirm_no)
+if (($host.ui.PromptForChoice($list, "これらのディレクトリを削除しますか？", $confirmation, 1)) -eq 0) {
 
-
-# Add "obj" and "bin" folders to remove queue
-$Target_Projects | % {
-
-    $project_folder = Get-Location | Join-Path -ChildPath $_
-    if ((Test-Path -Path $project_folder) -and ((Get-Item -Path $project_folder).PSIsContainer))
-    {
-        $Target_Folders | % {
-
-            if (($target = Join-Path -Path $project_folder -ChildPath $_) | Test-Path)
-            {
-                $Remove_Folders += $target
-            }
-        }
-    }
+	# Remove Item(s)
+	$Targets | ? { $_ | Test-Path } | % {
+		Remove-Item -Path $_ -Recurse -Force -Verbose #-WhatIf
+	}
 }
-
-
-# Add additional files to remove queue
-$Additional_Files | % {
-    
-    if (($target = Get-Location | Join-Path -ChildPath $_) | Test-Path)
-    {
-        $Remove_Folders += $target
-    }
-}
-
-
-# Show continue message
-"The following folder(s) and file(s) are removed."
-""
-$Remove_Folders | % { $_ }
-if ($Remove_Folders.Count -eq 0) { "(None)" }
-""
-"Please hit ENTER key to continue."
-Read-Host
-
-
-# Remove folders and files
-$Remove_Folders | % {
-
-    Remove-Item -Path $_ -Recurse -Force -Verbose
-}
-
-
-# Show exit message
-""
-"Please hit ENTER key to exit."
-Read-Host
