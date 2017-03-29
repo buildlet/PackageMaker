@@ -5,14 +5,16 @@
      xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
 
   <!-- Include -->
-  <?include ..\Version\InstallerGUID.wxi?>
-  <?include ..\Version\InstallerVersionInfo.wxi?>
-  <?include ..\Common\InstallerInfo.wxi?>
+  <?include ..\Properties\InstallerGUID.wxi?>
+  <?include ..\Properties\InstallerProductInfo.wxi?>
+  <?include ..\Properties\InstallerVersionInfo.wxi?>
+  <?include ..\Properties\InstallerResourceInfo.wxi?>
 
   
   <!-- GUID -->
   <?define GUID_UpgradeCode="$(var.GUID_PackageMaker_SetupBootstrapper_UpgradeCode)"?>
 
+  
   <!-- Product Information -->
   <?define ProductName="$(var.PackageMaker_ProductName)"?>
 

@@ -2,9 +2,10 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
   <!-- Include -->
-  <?include ..\Version\InstallerGUID.wxi?>
-  <?include ..\Version\InstallerVersionInfo.wxi?>
-  <?include ..\Common\InstallerInfo.wxi?>
+  <?include ..\Properties\InstallerGUID.wxi?>
+  <?include ..\Properties\InstallerProductInfo.wxi?>
+  <?include ..\Properties\InstallerVersionInfo.wxi?>
+  <?include ..\Properties\InstallerResourceInfo.wxi?>
 
 
   <!-- GUID -->

@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Initialize.ps1" />
     <Compile Include="Pack.ps1" />
     <Compile Include="SamplePackage\Build.ps1" />
+    <Compile Include="SamplePackage\ReleaseNotes.html" />
+    <Compile Include="SamplePackage\Restrictions.html" />
     <Compile Include="SamplePackage\Sample.ini" />
   </ItemGroup>
   <ItemGroup>

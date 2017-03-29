@@ -1,0 +1,354 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Release Notes Sample</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+            <!--
+
+            /* Version */
+            #version:before   { content: "BUILDLet PackageMaker Toolkit"; }
+            #version:after    { content: "2.1.0.0" }
+
+            /* Copyrgiht */
+            #copyright:before { content: "Copyright (C)"; }
+            #copyright:after  { content: "2015-2017 Daiki Sakamoto All rights reserved."; }
+
+
+            /* All */
+            * { font-family: Arial,sans-serif; }
+
+
+            /* Body */
+            body { background-color: darkgray; }
+
+
+            /* Page */
+            div.page {
+                width: 1024px;
+                background-color: white;
+                margin: auto;
+                padding: 5px 30px 10px 30px;
+            }
+
+
+            /* Section */
+            div.section {
+                margin-bottom: 3em;
+            }
+
+
+            /* Page Footer */
+            div.footer {
+                color: gray;
+                text-align: right;
+                font-size: small;
+                line-height: 0;
+            }
+
+
+            /* Headline */
+            h1 {
+                text-decoration: underline;
+                counter-reset: chapter;
+            }
+
+            h2 {
+                counter-increment: chapter;
+                counter-reset: section;
+            }
+
+            h3 {
+                counter-increment: section;
+                counter-reset: subsection;
+            }
+
+            h4 {
+                counter-increment: subsection;
+            }
+
+            h2:before { content: counter(chapter) ". " }
+            h3:before { content: counter(chapter) "." counter(section) ". " }
+            h4:before { content: counter(chapter) "." counter(section) "." counter(subsection) ". " }
+
+
+            /* Table */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            tr, td {
+                border: 1px solid;
+                padding: 2px 10px 2px 10px;
+            }
+
+            thead {
+                font-weight: bold;
+                background-color: lightgray;
+            }
+
+            caption {
+                font-weight: bold;
+                margin: 2px 10px 5px 10px;
+            }
+
+
+            /* Driver Number */
+            #driver_num:before { content: counter(driver_num_value) }
+            tr { counter-increment: driver_num_value; }
+
+            -->
+        </style>
+    </head>
+    <body>
+        <!-- Page -->
+        <div class="page">
+        
+            <!-- H1: Release Notes Title -->
+            <h1>Release Notes Sample</h1>
+            
+            <!-- Introduction -->
+            <div class="section">
+                <p style="font-weight:bold">Wednesday, March 29, 2017</p>
+                <p>This is sapmle of the release notes for <span style="font-weight:bold">Sample Project Version 2.1.0.0</span>.</p>
+            </div>
+            
+            
+            <!-- H2: Version Information -->
+            <h2>Version Information</h2>
+            
+            
+            <!-- __MODEL_START__ -->
+            <div class="section">
+                
+                <!-- H3: Model Name -->
+                <h3>Sample Model 1</h3>
+                
+                
+                <!-- __DRIVER_START__ -->
+                <div class="section">
+                    
+                    <!-- H4: Driver Name -->
+                    <h4>Dummy Driver</h4>
+                    
+                    
+                    <!-- __LANG_START__ -->
+                    <div class="section">
+                        <h4>English</h4>
+                        
+                        <table>
+                            <caption>Driver Version Information</caption>
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Driver</td>
+                                    <td>Date</td>
+                                    <td>Version</td>
+                                    <td>Signature</td>
+                                    <td>Time Stamp</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- __DRIVER_ARCH_START__ -->
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x64)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.64.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:19 2017</td>
+                                </tr>
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x86)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.32.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:18 2017</td>
+                                </tr>
+                                <!-- __DRIVER_ARCH_END__ -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- __LANG_END__ -->
+                    <!-- __LANG_START__ -->
+                    <div class="section">
+                        <h4>Japanese</h4>
+                        
+                        <table>
+                            <caption>Driver Version Information</caption>
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Driver</td>
+                                    <td>Date</td>
+                                    <td>Version</td>
+                                    <td>Signature</td>
+                                    <td>Time Stamp</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- __DRIVER_ARCH_START__ -->
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x64)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.64.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:20 2017</td>
+                                </tr>
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x86)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.32.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:19 2017</td>
+                                </tr>
+                                <!-- __DRIVER_ARCH_END__ -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- __LANG_END__ -->
+                    
+                    
+                </div>
+                <!-- __DRIVER_END__ -->
+                
+                
+            </div>
+            <!-- __MODEL_END__ -->
+            <!-- __MODEL_START__ -->
+            <div class="section">
+                
+                <!-- H3: Model Name -->
+                <h3>Sample Model 2</h3>
+                
+                
+                <!-- __DRIVER_START__ -->
+                <div class="section">
+                    
+                    <!-- H4: Driver Name -->
+                    <h4>Dummy Driver</h4>
+                    
+                    
+                    <!-- __LANG_START__ -->
+                    <div class="section">
+                        <h4>English</h4>
+                        
+                        <table>
+                            <caption>Driver Version Information</caption>
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Driver</td>
+                                    <td>Date</td>
+                                    <td>Version</td>
+                                    <td>Signature</td>
+                                    <td>Time Stamp</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- __DRIVER_ARCH_START__ -->
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x64)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.64.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:21 2017</td>
+                                </tr>
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x86)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.32.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:20 2017</td>
+                                </tr>
+                                <!-- __DRIVER_ARCH_END__ -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- __LANG_END__ -->
+                    <!-- __LANG_START__ -->
+                    <div class="section">
+                        <h4>Japanese</h4>
+                        
+                        <table>
+                            <caption>Driver Version Information</caption>
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Driver</td>
+                                    <td>Date</td>
+                                    <td>Version</td>
+                                    <td>Signature</td>
+                                    <td>Time Stamp</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- __DRIVER_ARCH_START__ -->
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x64)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.64.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:21 2017</td>
+                                </tr>
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>Dummy Driver (x86)</td>
+                                    <td>05/10/2015</td>
+                                    <td>1.0.32.0</td>
+                                    <td>PowerShell Local Certificate Root</td>
+                                    <td>Wed Mar 29 20:45:21 2017</td>
+                                </tr>
+                                <!-- __DRIVER_ARCH_END__ -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- __LANG_END__ -->
+                    
+                    
+                </div>
+                <!-- __DRIVER_END__ -->
+                
+                
+            </div>
+            <!-- __MODEL_END__ -->
+            
+            
+            <!-- H2: Limitation(s) -->
+            <h2>Limitation</h2>
+            
+            
+            <!-- Restriction(s) -->
+            <div class="section">
+                <ol>
+                    <li>ひとつ目の制限事項</li>
+                    <li>ふたつ目の制限事項</li>
+                    <li>みっつ目の制限事項</li>
+                </ol>
+            </div>
+            
+            
+            <!-- Page Footer -->
+            <div class="footer">
+                <hr class="footer" />
+                <p class="footer" id="version" />
+                <p class="footer" id="copyright" />
+            </div>
+            <!-- /Page Footer -->
+            
+        </div>
+        <!-- /Page -->
+        
+    </body>
+</html>

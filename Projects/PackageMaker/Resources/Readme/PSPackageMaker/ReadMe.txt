@@ -1,7 +1,7 @@
 ﻿BUILDLet PackageMaker PowerShell Module
 =======================================
 
-Version 2.0.1.0
+Version 2.x.0.0
 ---------------
 
 概要
@@ -71,18 +71,17 @@ BUILDLet.PackageMaker.PowerShell は、
 
 BUILDLet.PackageMaker.PowerShell をインポートすると、次のコマンド (Function) 
 がインポートされます。詳細は各コマンドのヘルプを参照してください。
-詳細は、各コマンドのヘルプを参照してください。
 
-  1. Get-AuthenticodeTimeStamp (Function)
+  1. Get-AuthenticodeTimeStamp (Function)  
      デジタル署名のタイムスタンプを取得します。
 
-  2. Invoke-SignTool (Function)
+  2. Invoke-SignTool (Function)  
      SignTool.exe  (署名ツール) を実行します。
 
-  3. New-CatalogFile (Function)
+  3. New-CatalogFile (Function)  
      ドライバー パッケージ用のカタログ ファイルを作成します。
 
-  4. New-ISOImageFile (Function)
+  4. New-ISOImageFile (Function)  
      Rock Ridge 属性付きハイブリッド ISO9660 / JOLIET / HFS ファイルシステムイメージを作成します。
 
 
@@ -95,6 +94,9 @@ License.txt を参照してください。
 
 変更履歴
 --------
+
+* Version 2.x.0.0 (2017/00/00)  
+  未定
 
 * Version 2.0.1.0 (2017/03/18)  
   全ての Function を刷新しました。
