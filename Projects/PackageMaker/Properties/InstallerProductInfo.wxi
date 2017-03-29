@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <!-- BUILDLet PackageMaker Toolkit -->
+  <?define PackageMaker_ProductName="BUILDLet PackageMaker Toolkit"?>
+  <?define PackageMaker_ProductComment="BUILDLet PackageMaker Toolkit"?>
+  <?define PackageMaker_ProductFolderName="BUILDLet PackageMaker Toolkit"?>
+
+  <!-- BUILDLet.PackageMaker.PowerShell -->
+  <?define PSPackageMaker_ProductName="BUILDLet PackageMaker PowerShell Module"?>
+  <?define PSPackageMaker_ProductComment="BUILDLet PackageMaker PowerShell Module"?>
+  <?define PSPackageMaker_PSModuleName="BUILDLet.PackageMaker.PowerShell"?>
+
+</Include>

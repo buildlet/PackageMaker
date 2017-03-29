@@ -1,7 +1,7 @@
 ﻿BUILDLet PackageMaker Toolkit
 =============================
 
-Version 2.0.1.0
+Version 2.1.0.0
 ---------------
 
 概要
@@ -14,14 +14,14 @@ BUILDLet PackageMaker Toolkit には、PowerShell モジュールと PowerShell 
 
 BUILDLet PackageMaker Toolkit をインストールすると、次のモジュールがインストールされます。
 
-  1. BUILDLet PackageMaker Toolkit Version 2.0.1  
-    (Sample Script Version 2.0.1.0 が含まれます。)
+  1. BUILDLet PackageMaker Toolkit Version 2.1.0  
+    (Sample Script Version 2.1.0.0 が含まれます。)
 
   2. BUILDLet PackageMaker PowerShell Module Version 2.0.1  
     (BUILDLet.PackageMaker.PowerShell Version 2.0.1.0)
 
-  3. BUILDLet Utilities PowerShell Module Version 2.0.1  
-    (BUILDLet.Utilities.PowerShell Version 2.0.1.0)
+  3. BUILDLet Utilities PowerShell Module Version 2.1.0  
+    (BUILDLet.Utilities.PowerShell Version 2.1.0.0)
 
 
 インストール方法
@@ -105,8 +105,12 @@ License.txt を参照してください。
 変更履歴
 --------
 
+* Version 2.1.0.0 (2017/03/29)  
+  サンプル パッケージのビルド スクリプトに Release Notes 作成機能を追加しました。  
+  サンプル パッケージのビルド スクリプトのパラメーターをサポートしました。
+
 * Version 2.0.1.0 (2017/03/18)  
-  PowerShell モジュール、および、サンプル データを含む全てを刷新しました。
+  PowerShell モジュール、および、サンプル データを含む全てを刷新しました。  
   Version 1.x との互換性はありません。
 
 * Version 1.2.1.0 (2015/11/15)  
@@ -132,8 +136,9 @@ License.txt を参照してください。
   BUILDLet.PowerShell.Utilities モジュールのバージョン誤りを修正・改善。
 
 * Version 1.1.0.0 (2015/06/02)  
-  マイナーアップデート。
+  マイナーアップデート。  
   Readme ファイルを更新。
+
 * Version 1.0.8.0 (2015/05/29)  
   Readme ファイルを更新。
 

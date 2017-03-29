@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
 
-  <!-- Product Information (BUILDLet PackageMaker Toolkit) -->
-  <?define PackageMaker_ProductName="BUILDLet PackageMaker Toolkit"?>
-  <?define PackageMaker_ProductComment="BUILDLet PackageMaker Toolkit"?>
-  <?define PackageMaker_ProductFolderName="BUILDLet PackageMaker Toolkit"?>
-
-  <!-- Product Information (BUILDLet.PackageMaker.PowerShell) -->
-  <?define PSPackageMaker_ProductName="BUILDLet PackageMaker PowerShell Module"?>
-  <?define PSPackageMaker_ProductComment="BUILDLet PackageMaker PowerShell Module"?>
-  <?define PSPackageMaker_PSModuleName="BUILDLet.PackageMaker.PowerShell"?>
-
-
-  <!-- Resource Files (Setup: BUILDLet PackageMaker Toolkit) -->
+  <!-- Setup Files -->
+  <!-- BUILDLet PackageMaker Toolkit -->
   <?define Resource_PackageMakerSetup="..\bin\$(var.Configuration)\PackageMakerSetup.msi"?>
+
+  <!-- "PSPackageMakerSetup.exe" is NOT updated with Package Maker Toolkit Version 2.1.0.0.
   <?define Resource_PSPackageMakerSetupBootstrapper="..\bin\$(var.Configuration)\PSPackageMakerSetup.exe"?>
+  -->
+
+  <?define Resource_PSPackageMakerSetupBootstrapper="..\Redistributables\BUILDLet\PSPackageMakerSetup.exe"?>
   <?define Resource_PSUtilitiesSetupBootstrapper="..\Redistributables\BUILDLet\PSUtilitiesSetup.exe"?>
 
-  <!-- Resource Files (Setup: BUILDLet.PackageMaker.PowerShell) -->
+  
+  <!-- Setup Files (.msi) -->
+  <!-- BUILDLet.PackageMaker.PowerShell -->
   <?define Resource_PSPackageMakerSetup="..\bin\$(var.Configuration)\PSPackageMakerSetup.msi"?>
   <?define Resource_PSPackageMakerSetup64="..\bin\$(var.Configuration)\PSPackageMakerSetup64.msi"?>
+  
 
-
-  <!-- Resource Files (Logo) -->
+  <!-- Logo Image Files -->
   <?define Resource_LogoFile_PSPackageMakerSetupBootstrapper="..\\Resources\Logo\PSPackageMakerSetupBootstrapper\BUILDLet.Logo_White-DarkRed_64x64.png"?>
 
-  <!-- Resource Files (License) -->
+  <!-- License Files -->
   <?define Resource_LicenseFile_TXT="..\Resources\License\License.txt"?>
   <?define Resource_LicenseFile_RTF="..\Resources\License\License.rtf"?>
 
-  <!-- Resource Files (Readme) -->
+  <!-- Readme Files -->
   <?define Resource_ReadmeFile_PackageMaker="..\\Resources\Readme\PackageMaker\Readme.txt"?>
 
 
-  <!-- Resource Files (BUILDLet PackageMaker Toolkit) -->
+  <!-- BUILDLet PackageMaker Toolkit -->
   <?define Resource_PackageMakerSamplePackage_ZIP="..\bin\$(var.Configuration)\SamplePackage.zip"?>
 
-  <!-- Resource Files (BUILDLet.PackageMaker.PowerShell) -->
+  <!-- BUILDLet.PackageMaker.PowerShell -->
   <?define Resource_PSPackageMaker_PSD1="..\BUILDLet.PackageMaker.PowerShellModule\BUILDLet.PackageMaker.PowerShell.psd1"?>
   <?define Resource_PSPackageMaker_PSM1="..\BUILDLet.PackageMaker.PowerShellModule\BUILDLet.PackageMaker.PowerShell.psm1"?>
 

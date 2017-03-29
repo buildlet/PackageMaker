@@ -8,11 +8,11 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetup"
 		{98DDC747-CEC1-4B1E-AB5A-945F7E24A782} = {98DDC747-CEC1-4B1E-AB5A-945F7E24A782}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DDF9300B-7BBE-415B-8629-7F3F1826B2D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{DDF9300B-7BBE-415B-8629-7F3F1826B2D9}"
 	ProjectSection(SolutionItems) = preProject
-		Common\InstallerInfo.wxi = Common\InstallerInfo.wxi
-		Common\PowerShellModuleDeployTemplate.ps1 = Common\PowerShellModuleDeployTemplate.ps1
-		Common\PowerShellModuleTestInitializeTemplate.ps1 = Common\PowerShellModuleTestInitializeTemplate.ps1
+		Templates\Post-BuildEvent.Template.cmd = Templates\Post-BuildEvent.Template.cmd
+		Templates\PowerShellModuleDeployTemplate.ps1 = Templates\PowerShellModuleDeployTemplate.ps1
+		Templates\PowerShellModuleTestInitialize.Template.ps1 = Templates\PowerShellModuleTestInitialize.Template.ps1
 	EndProjectSection
 EndProject
 Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "BUILDLet.PackageMaker.PowerShellModule", "BUILDLet.PackageMaker.PowerShellModule\BUILDLet.PackageMaker.PowerShellModule.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
@@ -44,10 +44,12 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMaker.Power
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51} = {6CAFC0C6-A428-4D30-A9F9-700E829FEA51}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{AA6AA193-D9CD-493A-9400-586FBB3BC6EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{AA6AA193-D9CD-493A-9400-586FBB3BC6EE}"
 	ProjectSection(SolutionItems) = preProject
-		Version\InstallerGUID.wxi = Version\InstallerGUID.wxi
-		Version\InstallerVersionInfo.wxi = Version\InstallerVersionInfo.wxi
+		Properties\InstallerGUID.wxi = Properties\InstallerGUID.wxi
+		Properties\InstallerProductInfo.wxi = Properties\InstallerProductInfo.wxi
+		Properties\InstallerResourceInfo.wxi = Properties\InstallerResourceInfo.wxi
+		Properties\InstallerVersionInfo.wxi = Properties\InstallerVersionInfo.wxi
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Link", "Link", "{1E0B591E-F7A7-4427-8FEE-31003F1D5638}"
@@ -68,6 +70,16 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "BUILDLet.PackageMakerSetupB
 		{E3DB8C81-6DB3-4C24-A404-3DCABD23A36B} = {E3DB8C81-6DB3-4C24-A404-3DCABD23A36B}
 		{929AF0F9-BB11-4CC5-B6D7-33DF9911D280} = {929AF0F9-BB11-4CC5-B6D7-33DF9911D280}
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Redisributables", "Redisributables", "{9C64E55C-EB2E-4E60-AE2D-B74823F1390A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{4E137F0C-65CF-47F2-8A26-09830EAECB20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licenses", "Licenses", "{75796B14-E5A2-4C8B-96FD-58E724EFFE1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{2E7BE52C-A060-484E-BEA1-F46E2364B96C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestResults", "TestResults", "{02F2C9C7-39CF-4708-AF1A-EA5752D707A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

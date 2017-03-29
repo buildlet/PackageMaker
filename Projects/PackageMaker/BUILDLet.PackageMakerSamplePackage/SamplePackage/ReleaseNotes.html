@@ -1,42 +1,69 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <title>Release Notes Sample</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style type="text/css">
             <!--
 
+            /* Version */
             #version:before   { content: "BUILDLet PackageMaker Toolkit"; }
-            #version:after    { content: "1.2.0.0" }
+            #version:after    { content: "2.1.0.0" }
 
+            /* Copyrgiht */
             #copyright:before { content: "Copyright (C)"; }
-            #copyright:after  { content: "2015 Daiki Sakamoto All rights reserved."; }
+            #copyright:after  { content: "2015-2017 Daiki Sakamoto All rights reserved."; }
 
-            #project_name {
-                font-weight: bold;
-                font-family: Arial,sans-serif;
+
+            /* All */
+            * { font-family: Arial,sans-serif; }
+
+
+            /* Body */
+            body { background-color: darkgray; }
+
+
+            /* Page */
+            div.page {
+                width: 1024px;
+                background-color: white;
+                margin: auto;
+                padding: 5px 30px 10px 30px;
             }
 
 
+            /* Section */
+            div.section {
+                margin-bottom: 3em;
+            }
+
+
+            /* Page Footer */
+            div.footer {
+                color: gray;
+                text-align: right;
+                font-size: small;
+                line-height: 0;
+            }
+
+
+            /* Headline */
             h1 {
                 text-decoration: underline;
-                font-family: Arial,sans-serif;
                 counter-reset: chapter;
             }
 
             h2 {
-                font-family: Arial,sans-serif;
                 counter-increment: chapter;
                 counter-reset: section;
             }
 
             h3 {
-                font-family: Arial,sans-serif;
                 counter-increment: section;
                 counter-reset: subsection;
             }
 
             h4 {
-                font-family: Arial,sans-serif;
                 counter-increment: subsection;
             }
 
@@ -45,15 +72,7 @@
             h4:before { content: counter(chapter) "." counter(section) "." counter(subsection) ". " }
 
 
-            body {
-                background-color: darkgray;
-            }
-
-            p {
-                font-family: 'Times New Roman',serif;
-            }
-
-
+            /* Table */
             table {
                 border-collapse: collapse;
                 width: 100%;
@@ -62,80 +81,120 @@
             tr, td {
                 border: 1px solid;
                 padding: 2px 10px 2px 10px;
-                font-family: Arial,sans-serif;
             }
 
             thead {
                 font-weight: bold;
-                font-family: Arial,sans-serif;
+                background-color: lightgray;
             }
 
             caption {
                 font-weight: bold;
-                font-family: Arial,sans-serif;
                 margin: 2px 10px 5px 10px;
             }
 
 
-            div.page {
-                width: 950px;
-                background-color: white;
-                margin: auto;
-                padding: 5px 30px 10px 30px;
-            }
+            /* Driver Number */
+            #driver_num:before { content: counter(driver_num_value) }
+            tr { counter-increment: driver_num_value; }
 
-            div.project, div.model, div.language, div.limitation {
-                margin-bottom: 3em;
-            }
-
-            div.footer { }
-
-
-            hr.footer {
-                color: gray;
-            }
-
-            p.date {
-                font-weight: bold;
-                font-family: Arial,sans-serif;
-            }
-
-            p.footer {
-                color: gray;
-                text-align: right;
-                font-size: small;
-                font-family: 'Times New Roman',serif;
-                line-height: 0;
-            }
             -->
         </style>
     </head>
     <body>
+        <!-- Page -->
         <div class="page">
+        
+            <!-- H1: Release Notes Title -->
             <h1>Release Notes Sample</h1>
-
-            <p class="date">__DATE__</p>
-
-            <p>This is sapmle release notes for <span id="project_name">__PROJECT_NAME__ Version __PROJECT_VERSION__</span>.</p>
-            <br/>
-
-            <div class="project">
             
-                <h2>Version Information</h2>
+            <!-- Introduction -->
+            <div class="section">
+                <p style="font-weight:bold">__DATE__</p>
+                <p>This is sapmle of the release notes for <span style="font-weight:bold">__PROJECT_NAME__ Version __PROJECT_VERSION__</span>.</p>
+            </div>
+            
+            
+            <!-- H2: Version Information -->
+            <h2>Version Information</h2>
+            
+            
+            <!-- __MODEL_START__ -->
+            <div class="section">
                 
-                __MODELS__
+                <!-- H3: Model Name -->
+                <h3>__MODEL_NAME__</h3>
                 
-                __LIMITATION__
                 
-                <p/>
+                <!-- __DRIVER_START__ -->
+                <div class="section">
+                    
+                    <!-- H4: Driver Name -->
+                    <h4>__DRIVER_NAME__</h4>
+                    
+                    
+                    <!-- __LANG_START__ -->
+                    <div class="section">
+                        <h4>__LANGUAGE_NAME__</h4>
+                        
+                        <table>
+                            <caption>Driver Version Information</caption>
+                            <thead>
+                                <tr>
+                                    <td>No.</td>
+                                    <td>Driver</td>
+                                    <td>Date</td>
+                                    <td>Version</td>
+                                    <td>Signature</td>
+                                    <td>Time Stamp</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- __DRIVER_ARCH_START__ -->
+                                <tr>
+                                    <td><span id="driver_num" /></td>
+                                    <td>__DRIVER_NAME__ (__DRIVER_ARCH__)</td>
+                                    <td>__DRIVER_DATE__</td>
+                                    <td>__DRIVER_VERSION__</td>
+                                    <td>__DRIVER_SIGNER_NAME__</td>
+                                    <td>__DRIVER_SIGNATURE_TIMESTAMP__</td>
+                                </tr>
+                                <!-- __DRIVER_ARCH_END__ -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- __LANG_END__ -->
+                    
+                    
+                </div>
+                <!-- __DRIVER_END__ -->
+                
                 
             </div>
-
+            <!-- __MODEL_END__ -->
+            
+            
+            <!-- H2: Limitation(s) -->
+            <h2>Limitation</h2>
+            
+            
+            <!-- Restriction(s) -->
+            <div class="section">
+__RESTRICTIONS__
+            </div>
+            
+            
+            <!-- Page Footer -->
             <div class="footer">
                 <hr class="footer" />
                 <p class="footer" id="version" />
                 <p class="footer" id="copyright" />
             </div>
+            <!-- /Page Footer -->
+            
         </div>
+        <!-- /Page -->
+        
     </body>
 </html>

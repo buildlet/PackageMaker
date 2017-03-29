@@ -8,12 +8,12 @@
   <?define GUID_PSPackageMaker_SetupBootstrapper_UpgradeCode="{916D4719-6397-4E16-9138-EED04D48C777}"?>
 
   
-  <!-- Product Code of BUILDLet.Utilities.PowerShoell (Current) -->
+  <!-- Product Code of BUILDLet.Utilities.PowerShoell Version 2.x.x (Current) -->
   <?define GUID_PSUtilities_Product="{092B0AC1-6542-4D19-9467-B1087282FDB4}"?>
   <?define GUID_PSUtilities64_Product="{9B594029-FFDB-4A45-B881-60D421BC05F6}"?>
 
-
-
+  
+  
   <!-- BUILDLet PackageMaker Toolkit Version 2.x.x (Current) -->
   <?define GUID_PackageMaker_UpgradeCode="{33F3C813-AB06-42BF-ACB2-836603497B63}"?>
   <?define GUID_PackageMaker_Product="{FB0D018F-00C7-4E84-B722-7497A2F4700A}"?>
