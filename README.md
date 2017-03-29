@@ -97,8 +97,8 @@ BUILDLet.PackageMaker.PowerShell をインポートするためには、BUILDLet
 
 使用方法
 --------
-BUILDLet.Utilities.PowerShell をインポートすると、次のコマンド (Function または Cmdlet) 
-がインポートされます。詳細は各コマンドのヘルプを参照してください。  
+BUILDLet.Utilities.PowerShell をインポートすると、次のコマンド (Function または Cmdlet) がインポートされます。  
+詳細は各コマンドのヘルプを参照してください。  
 一部のコマンドは、コマンドのみを入力するとコマンドの概要が表示されます。
 
   1. **Expand-ZipFile** (Cmdlet)  
@@ -162,8 +162,8 @@ BUILDLet.Utilities.PowerShell をインポートすると、次のコマンド (
      指定した検索パターンを含む開始行と終了行の間に含まれるテキスト ブロックを取得します。
 
 
-BUILDLet.PackageMaker.PowerShell をインポートすると、次のコマンド (Function) 
-がインポートされます。詳細は各コマンドのヘルプを参照してください。
+BUILDLet.PackageMaker.PowerShell をインポートすると、次のコマンド (Function) がインポートされます。  
+詳細は各コマンドのヘルプを参照してください。
 
   1. **Get-AuthenticodeTimeStamp** (Function)  
      デジタル署名のタイムスタンプを取得します。
