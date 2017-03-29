@@ -1,7 +1,7 @@
 PackageMaker Toolkit
 ====================
 
-Version 2.0.1.0
+Version 2.1.0.0
 ---------------
 
 概要
@@ -13,14 +13,14 @@ BUILDLet PackageMaker Toolkit には、PowerShell モジュールと PowerShell 
 
 BUILDLet PackageMaker Toolkit をインストールすると、次のモジュールがインストールされます。
 
-  1. **BUILDLet PackageMaker Toolkit Version 2.0.1**  
-    (*Sample Script Version 2.0.1.0 が含まれます。*)
+  1. **BUILDLet PackageMaker Toolkit Version 2.1.0**  
+    (*Sample Script Version 2.1.0.0 が含まれます。*)
 
   2. **BUILDLet PackageMaker PowerShell Module Version 2.0.1**  
     (*BUILDLet.PackageMaker.PowerShell Version 2.0.1.0*)
 
-  3. **BUILDLet Utilities PowerShell Module Version 2.0.1**  
-    (*BUILDLet.Utilities.PowerShell Version 2.0.1.0*)
+  3. **BUILDLet Utilities PowerShell Module Version 2.1.0**  
+    (*BUILDLet.Utilities.PowerShell Version 2.1.0.0*)
 
 
 インストール方法
@@ -158,6 +158,9 @@ BUILDLet.Utilities.PowerShell をインポートすると、次のコマンド (
   19. **New-Directory** (Function)  
      指定されたパスにディレクトリを作成します。
 
+  20. **Get-ContentBlock** (Function)  
+     指定した検索パターンを含む開始行と終了行の間に含まれるテキスト ブロックを取得します。
+
 
 BUILDLet.PackageMaker.PowerShell をインポートすると、次のコマンド (Function) 
 がインポートされます。詳細は各コマンドのヘルプを参照してください。
@@ -203,6 +206,11 @@ BUILDLet.PowerShell.Utilities のソースコードは [buildlet/Utilities](http
 
 変更履歴
 --------
+### Version 2.1.0.0
+**2017/03/29**  
+サンプル パッケージのビルド スクリプトに Release Notes 作成機能を追加しました。  
+サンプル パッケージのビルド スクリプトのパラメーターをサポートしました。
+
 ### Version 2.0.1.0
 **2017/03/18**  
 PowerShell モジュール、および、サンプル データを含む全てを刷新しました。  
